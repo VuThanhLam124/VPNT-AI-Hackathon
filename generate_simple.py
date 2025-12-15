@@ -2,7 +2,7 @@
 SIMPLE RAG (không finetune) dùng BGE-m3 cho retrieval.
 Ưu tiên:
 1) Câu hỏi có context nhúng: chọn đáp án theo context
-2) Retrieval (BGE hoặc lexical) từ KB trong `data/converted/*`
+2) Retrieval BGE từ KB trong `data/converted/*`
 3) Heuristics fallback
 """
 import json
@@ -10,7 +10,6 @@ import os
 import re
 import difflib
 import math
-import csv
 import pickle
 from typing import Optional
 
@@ -25,23 +24,12 @@ except Exception:
     SentenceTransformer = None
 from tqdm import tqdm
 from data_utils import (
-    load_dataset,
     has_embedded_context,
     extract_context_and_question,
     is_sensitive_question,
     load_kb_corpus,
 )
 from data_utils import detect_domain
-try:
-    from api_client import APIClient
-except Exception:
-    APIClient = None
-
-try:
-    from sklearn.feature_extraction.text import TfidfVectorizer
-    from sklearn.metrics.pairwise import cosine_similarity
-except Exception:
-    TfidfVectorizer = None
 
 try:
     from rank_bm25 import BM25Okapi
@@ -100,7 +88,7 @@ STOPWORDS = {
 
 USE_BGE_M3 = True
 BGE_MODEL_NAME = "BAAI/bge-m3"
-BGE_INDEX_PATH = "kb_bge_index.pkl"
+BGE_INDEX_PATH = "kb_bge_m3_index.pkl"
 MAX_CHUNK_CHARS = 800  # truncate chunk trước khi embed để tránh quá dài
 # BGE prefix (khuyến nghị cho nhiều model BGE): "query:" và "passage:"
 BGE_USE_PREFIX = True
@@ -115,19 +103,6 @@ except ValueError:
     BGE_BATCH_SIZE = 16
 # Nếu thiếu BGE, sẽ dùng BM25 nếu có, rồi TF-IDF (sklearn) nếu có.
 USE_BM25_FALLBACK = True
-USE_TFIDF_FALLBACK = True
-
-# LLM online (VNPT) - mặc định tắt
-USE_VNPT_LLM = os.getenv("USE_VNPT_LLM", "0") == "1"
-VNPT_LLM_USE_LARGE = os.getenv("VNPT_LLM_MODEL", "large").lower() != "small"
-VNPT_LLM_MAX_TOKENS = int(os.getenv("VNPT_LLM_MAX_TOKENS", "128"))
-VNPT_LLM_ALWAYS = os.getenv("VNPT_LLM_ALWAYS", "0") == "1"
-
-# VNPT embedding index (đã build bằng API BTC) để retrieval offline (chỉ cần embed query).
-VNPT_EMBED_INDEX_PATH = os.getenv("VNPT_EMBED_INDEX_PATH", "kb_vnpt_embedding_index.pkl")
-USE_VNPT_EMBED_INDEX = os.getenv("USE_VNPT_EMBED_INDEX", "1") == "1"
-VNPT_EMBED_SLEEP_S = float(os.getenv("VNPT_EMBED_SLEEP_S", "0.12"))
-
 
 def _normalize_text(text: str) -> str:
     text = (text or "").lower()
@@ -326,91 +301,6 @@ def retrieve_docs_bge_filtered(query: str, kb_emb: dict, allowed_doc_types: Opti
     return _filter_docs_by_type(raw, allowed_doc_types)[:top_k]
 
 
-def load_vnpt_embedding_index(path: str = VNPT_EMBED_INDEX_PATH) -> Optional[dict]:
-    """
-    Load index được tạo bởi `build_index.py --backend vnpt`.
-    """
-    if not USE_VNPT_EMBED_INDEX:
-        return None
-    if np is None:
-        return None
-    if not os.path.exists(path):
-        return None
-    try:
-        with open(path, "rb") as f:
-            data = pickle.load(f)
-        docs = data.get("docs", [])
-        embs = data.get("embeddings", [])
-        if not isinstance(docs, list) or not isinstance(embs, list) or len(docs) != len(embs):
-            return None
-        kept_docs = []
-        kept_embs = []
-        for d, e in zip(docs, embs):
-            if e is None:
-                continue
-            kept_docs.append(d)
-            kept_embs.append(np.asarray(e, dtype=np.float32))
-        if not kept_docs:
-            return None
-        matrix = np.stack(kept_embs, axis=0)
-        # normalize để dùng dot product = cosine similarity
-        norms = np.linalg.norm(matrix, axis=1, keepdims=True)
-        norms[norms == 0] = 1.0
-        matrix = matrix / norms
-        return {
-            "backend": "vnpt",
-            "model_name": data.get("model_name", "vnptai_hackathon_embedding"),
-            "docs": kept_docs,
-            "matrix": matrix,
-        }
-    except Exception:
-        return None
-
-
-def retrieve_docs_vnpt_from_vector(vec: "np.ndarray", vnpt_index: dict, top_k: int = 5) -> list:
-    """
-    vec đã normalize (shape: [dim]).
-    """
-    sims = vnpt_index["matrix"] @ vec
-    if top_k <= 0:
-        return []
-    top_idx = np.argpartition(-sims, min(top_k, len(sims) - 1))[:top_k]
-    top_idx = top_idx[np.argsort(-sims[top_idx])]
-    out = []
-    for idx in top_idx:
-        doc = dict(vnpt_index["docs"][int(idx)])
-        doc["retrieval_score"] = float(sims[int(idx)])
-        out.append(doc)
-    return out
-
-
-def retrieve_docs_vnpt(query: str, vnpt_index: dict, client: "APIClient", top_k: int = 5) -> list:
-    """
-    Retrieval bằng VNPT embedding index:
-      - embed query bằng API BTC (1 request)
-      - cosine search trong index local
-    """
-    if np is None or client is None or vnpt_index is None:
-        return []
-    vec = client.get_embedding(query, encoding_format="float")
-    if vec is None:
-        return []
-    vec = np.asarray(vec, dtype=np.float32)
-    n = float(np.linalg.norm(vec))
-    if n == 0:
-        return []
-    vec = vec / n
-    if VNPT_EMBED_SLEEP_S and VNPT_EMBED_SLEEP_S > 0:
-        import time
-        time.sleep(VNPT_EMBED_SLEEP_S)
-    return retrieve_docs_vnpt_from_vector(vec, vnpt_index, top_k=top_k)
-
-
-def retrieve_docs_vnpt_filtered(query: str, vnpt_index: dict, client: "APIClient", allowed_doc_types: Optional[set], top_k: int = 5) -> list:
-    raw = retrieve_docs_vnpt(query, vnpt_index, client, top_k=max(20, top_k * 4))
-    return _filter_docs_by_type(raw, allowed_doc_types)[:top_k]
-
-
 def _allowed_doc_types(domain: str) -> Optional[set]:
     """
     Giảm nhiễu retrieval bằng cách lọc theo doc_type.
@@ -519,56 +409,6 @@ def load_saved_bge_index(path: str = BGE_INDEX_PATH, model_name: str = BGE_MODEL
         return None
 
 
-def build_tfidf_index(kb_dir: str = "data/converted", max_chunk_chars: int = MAX_CHUNK_CHARS) -> Optional[dict]:
-    """
-    TF-IDF fallback khi không có BGE. Dùng cosine_similarity.
-    """
-    if not USE_TFIDF_FALLBACK or TfidfVectorizer is None:
-        return None
-    docs_raw = load_kb_corpus(kb_dir)
-    docs = []
-    texts = []
-    for d in docs_raw:
-        t = d.get("text", "")
-        if not t or len(t) < 10:
-            continue
-        if max_chunk_chars and len(t) > max_chunk_chars:
-            t = t[:max_chunk_chars]
-        docs.append(
-            {
-                "text": t,
-                "source_file": d.get("source_file"),
-                "doc_type": d.get("doc_type"),
-                "answer": d.get("answer"),
-            }
-        )
-        texts.append(t)
-    if not texts:
-        return None
-    vectorizer = TfidfVectorizer(max_features=50000)
-    tfidf_matrix = vectorizer.fit_transform(texts)
-    return {"vectorizer": vectorizer, "matrix": tfidf_matrix, "docs": docs}
-
-
-def retrieve_docs_tfidf(query: str, tfidf_index: dict, top_k: int = 5) -> list:
-    q_vec = tfidf_index["vectorizer"].transform([query])
-    sims = cosine_similarity(q_vec, tfidf_index["matrix"]).ravel()
-    if top_k <= 0:
-        return []
-    top_idx = sims.argsort()[::-1][:top_k]
-    out = []
-    for idx in top_idx:
-        doc = dict(tfidf_index["docs"][int(idx)])
-        doc["retrieval_score"] = float(sims[int(idx)])
-        out.append(doc)
-    return out
-
-
-def retrieve_docs_tfidf_filtered(query: str, tfidf_index: dict, allowed_doc_types: Optional[set], top_k: int = 5) -> list:
-    raw = retrieve_docs_tfidf(query, tfidf_index, top_k=max(20, top_k * 4))
-    return _filter_docs_by_type(raw, allowed_doc_types)[:top_k]
-
-
 def build_bm25_index(kb_dir: str = "data/converted", max_chunk_chars: int = MAX_CHUNK_CHARS) -> Optional[dict]:
     """
     BM25 fallback (rank_bm25).
@@ -620,51 +460,6 @@ def retrieve_docs_bm25_filtered(query: str, bm25_index: dict, allowed_doc_types:
     return _filter_docs_by_type(raw, allowed_doc_types)[:top_k]
 
 
-def retrieve_docs_hybrid_filtered(
-    query: str,
-    vnpt_index: Optional[dict],
-    client: Optional["APIClient"],
-    bm25_index: Optional[dict],
-    allowed_doc_types: Optional[set],
-    top_k: int = 5,
-) -> list:
-    """
-    Hybrid retrieval:
-    - VNPT embedding retrieval (semantic) nếu có index+client
-    - BM25 (lexical) nếu có index
-    Merge + rerank nhẹ theo lexical overlap để giảm nhiễu.
-    """
-    candidates = []
-    if vnpt_index is not None and client is not None:
-        candidates.extend(retrieve_docs_vnpt_filtered(query, vnpt_index, client, allowed_doc_types, top_k=max(10, top_k * 3)))
-    if bm25_index is not None:
-        candidates.extend(retrieve_docs_bm25_filtered(query, bm25_index, allowed_doc_types, top_k=max(10, top_k * 3)))
-    if not candidates:
-        return []
-    # dedupe by text
-    seen = set()
-    uniq = []
-    for d in candidates:
-        t = (d.get("text") or "").strip()
-        if not t:
-            continue
-        key = t[:240]
-        if key in seen:
-            continue
-        seen.add(key)
-        uniq.append(d)
-    # rerank by token overlap (reuse tokenizer in this module)
-    q_tokens = set(_tokenize(query))
-    scored = []
-    for d in uniq:
-        dt = (d.get("text") or "")
-        overlap = len(q_tokens & set(_tokenize(dt)))
-        score = float(d.get("retrieval_score", 0.0))
-        scored.append((overlap, score, d))
-    scored.sort(key=lambda x: (x[0], x[1]), reverse=True)
-    return [d for _, _, d in scored[:top_k]]
-
-
 def _parse_llm_answer(text: str, num_choices: int) -> Optional[str]:
     if not text:
         return None
@@ -684,36 +479,6 @@ def _parse_llm_answer(text: str, num_choices: int) -> Optional[str]:
         if 0 <= idx < num_choices:
             return ch_up
     return None
-
-
-def call_vnpt_llm_decide(question: str, choices: list, context: str, client: APIClient) -> Optional[str]:
-    """
-    Gọi VNPT LLM để quyết định đáp án. Trả về chữ cái hoặc None nếu lỗi.
-    """
-    if client is None:
-        return None
-    prompt = (
-        "Bạn là hệ thống trả lời trắc nghiệm.\n"
-        "Chọn 1 đáp án đúng nhất.\n"
-        "Quy tắc: chỉ trả về đúng 1 chữ cái (A, B, C, ...), không thêm giải thích.\n"
-        "- Nếu câu hỏi có 'Theo nội dung/Đoạn thông tin/Ngữ cảnh': chỉ kết luận từ context.\n"
-        "- Nếu có lựa chọn 'Không đủ thông tin/Không thể kết luận' và context không đủ liên quan thì chọn lựa chọn đó.\n"
-        "- Nếu có lựa chọn kiểu 'Cả A,B,C' hoặc 'Cả a, b, c': chọn khi (và chỉ khi) các lựa chọn thành phần đều đúng.\n"
-        "- Với %/so sánh số: trích số từ lựa chọn và chọn max/min theo câu hỏi.\n"
-        "- Với toán/lý: tự tính ra kết quả rồi map sang lựa chọn khớp nhất.\n"
-        "- Nếu context dài/nhiều đoạn: tập trung vào câu chứa đúng thực thể/keyword của câu hỏi.\n"
-    )
-    if context:
-        prompt += f"\n<context>\n{context}\n</context>\n"
-    prompt += f"\n<question>\n{question}\n</question>\n\n<choices>\n"
-    for i, c in enumerate(choices):
-        prompt += f"{_choice_label(i)}. {c}\n"
-    prompt += "</choices>\n\nTrả lời:"
-    try:
-        resp = client.call_llm(prompt, use_large=VNPT_LLM_USE_LARGE, max_tokens=VNPT_LLM_MAX_TOKENS, temperature=0.0)
-        return _parse_llm_answer(resp, len(choices))
-    except Exception:
-        return None
 
 
 def retrieve_docs(query: str, kb_index: dict, top_k: int = 5) -> list:
