@@ -1,0 +1,240 @@
+[
+  {
+    "tên tỉnh": "Tỉnh Tuyên Quang",
+    "phương án sáp nhập": "Hợp nhất tỉnh Tuyên Quang và tỉnh Hà Giang",
+    "trung tâm hành chính": "Tỉnh Tuyên Quang hiện nay",
+    "diện tích km2": 13795.6,
+    "dân số": 1731600
+  },
+  {
+    "tên tỉnh": "Tỉnh Lào Cai",
+    "phương án sáp nhập": "Hợp nhất tỉnh Lào Cai và tỉnh Yên Bái",
+    "trung tâm hành chính": "Tỉnh Yên Bái hiện nay",
+    "diện tích km2": 13257.0,
+    "dân số": 1656500
+  },
+  {
+    "tên tỉnh": "Tỉnh Thái Nguyên",
+    "phương án sáp nhập": "Hợp nhất tỉnh Bắc Kạn và tỉnh Thái Nguyên",
+    "trung tâm hành chính": "Tỉnh Thái Nguyên hiện nay",
+    "diện tích km2": 8375.3,
+    "dân số": 1694500
+  },
+  {
+    "tên tỉnh": "Tỉnh Phú Thọ",
+    "phương án sáp nhập": "Hợp nhất tỉnh Vĩnh Phúc, tỉnh Phú Thọ và tỉnh Hoà Bình",
+    "trung tâm hành chính": "Tỉnh Phú Thọ hiện nay",
+    "diện tích km2": 9361.4,
+    "dân số": 3663600
+  },
+  {
+    "tên tỉnh": "Tỉnh Bắc Ninh",
+    "phương án sáp nhập": "Hợp nhất tỉnh Bắc Ninh và tỉnh Bắc Giang",
+    "trung tâm hành chính": "Tỉnh Bắc Giang hiện nay",
+    "diện tích km2": 4718.6,
+    "dân số": 3509100
+  },
+  {
+    "tên tỉnh": "Tỉnh Hưng Yên",
+    "phương án sáp nhập": "Hợp nhất tỉnh Hưng Yên và tỉnh Thái Bình",
+    "trung tâm hành chính": "Tỉnh Hưng Yên hiện nay",
+    "diện tích km2": 2514.8,
+    "dân số": 3208400
+  },
+  {
+    "tên tỉnh": "Thành phố Hải Phòng",
+    "phương án sáp nhập": "Hợp nhất tỉnh Hải Dương và thành phố Hải Phòng",
+    "trung tâm hành chính": "Thành phố Hải Phòng hiện nay",
+    "diện tích km2": 3194.7,
+    "dân số": 4102700
+  },
+  {
+    "tên tỉnh": "Tỉnh Ninh Bình",
+    "phương án sáp nhập": "Hợp nhất tỉnh Hà Nam, tỉnh Ninh Bình và tỉnh Nam Định",
+    "trung tâm hành chính": "Tỉnh Ninh Bình hiện nay",
+    "diện tích km2": 3942.6,
+    "dân số": 3818700
+  },
+  {
+    "tên tỉnh": "Tỉnh Quảng Trị",
+    "phương án sáp nhập": "Hợp nhất tỉnh Quảng Bình và tỉnh Quảng Trị",
+    "trung tâm hành chính": "Tỉnh Quảng Bình hiện nay",
+    "diện tích km2": 12700.0,
+    "dân số": 1584000
+  },
+  {
+    "tên tỉnh": "Thành phố Đà Nẵng",
+    "phương án sáp nhập": "Hợp nhất tỉnh Quảng Nam và thành phố Đà Nẵng",
+    "trung tâm hành chính": "Thành phố Đà Nẵng hiện nay",
+    "diện tích km2": 11859.6,
+    "dân số": 2819900
+  },
+  {
+    "tên tỉnh": "Tỉnh Quảng Ngãi",
+    "phương án sáp nhập": "Hợp nhất tỉnh Kon Tum và tỉnh Quảng Ngãi",
+    "trung tâm hành chính": "Tỉnh Quảng Ngãi hiện nay",
+    "diện tích km2": 14832.6,
+    "dân số": 1861700
+  },
+  {
+    "tên tỉnh": "Tỉnh Gia Lai",
+    "phương án sáp nhập": "Hợp nhất tỉnh Gia Lai và tỉnh Bình Định",
+    "trung tâm hành chính": "Tỉnh Bình Định",
+    "diện tích km2": 21576.5,
+    "dân số": 3153300
+  },
+  {
+    "tên tỉnh": "Tỉnh Khánh Hoà",
+    "phương án sáp nhập": "Hợp nhất tỉnh Ninh Thuận và tỉnh Khánh Hoà",
+    "trung tâm hành chính": "Tỉnh Khánh Hòa hiện nay",
+    "diện tích km2": 8555.9,
+    "dân số": 1882000
+  },
+  {
+    "tên tỉnh": "Tỉnh Lâm Đồng",
+    "phương án sáp nhập": "Hợp nhất tỉnh Lâm Đồng, tỉnh Đắk Nông và tỉnh Bình Thuận",
+    "trung tâm hành chính": "Tỉnh Lâm Đồng hiện nay",
+    "diện tích km2": 24233.1,
+    "dân số": 3324400
+  },
+  {
+    "tên tỉnh": "Tỉnh Đắk Lắk",
+    "phương án sáp nhập": "Hợp nhất tỉnh Đắk Lắk và tỉnh Phú Yên",
+    "trung tâm hành chính": "Tỉnh Đắk Lắk hiện nay",
+    "diện tích km2": 18096.4,
+    "dân số": 2831300
+  },
+  {
+    "tên tỉnh": "Thành phố Hồ Chí Minh",
+    "phương án sáp nhập": "Hợp nhất tỉnh Bà Rịa - Vũng Tàu, tỉnh Bình Dương và Thành phố Hồ Chí Minh",
+    "trung tâm hành chính": "Thành phố Hồ Chí Minh hiện nay",
+    "diện tích km2": 6772.6,
+    "dân số": 13608800
+  },
+  {
+    "tên tỉnh": "Tỉnh Đồng Nai",
+    "phương án sáp nhập": "Hợp nhất tỉnh Đồng Nai và tỉnh Bình Phước",
+    "trung tâm hành chính": "Tỉnh Đồng Nai hiện nay",
+    "diện tích km2": 12737.2,
+    "dân số": 4427700
+  },
+  {
+    "tên tỉnh": "Tỉnh Tây Ninh",
+    "phương án sáp nhập": "Hợp nhất tỉnh Tây Ninh và tỉnh Long An",
+    "trung tâm hành chính": "Tỉnh Long An",
+    "diện tích km2": 8536.5,
+    "dân số": 2959000
+  },
+  {
+    "tên tỉnh": "Thành phố Cần Thơ",
+    "phương án sáp nhập": "Hợp nhất thành phố Cần Thơ, tỉnh Sóc Trăng và tỉnh Hậu Giang",
+    "trung tâm hành chính": "Thành phố Cần Thơ hiện nay",
+    "diện tích km2": 6360.8,
+    "dân số": 3207000
+  },
+  {
+    "tên tỉnh": "Tỉnh Vĩnh Long",
+    "phương án sáp nhập": "Hợp nhất tỉnh Bến Tre, tỉnh Vĩnh Long và tỉnh Trà Vinh",
+    "trung tâm hành chính": "Tỉnh Vĩnh Long hiện nay",
+    "diện tích km2": 6296.2,
+    "dân số": 3367400
+  },
+  {
+    "tén tỉnh": "Tỉnh Đồng Tháp",
+    "phương án sáp nhập": "Hợp nhất tỉnh Tiền Giang và tỉnh Đồng Tháp",
+    "trung tâm hành chính": "Tỉnh Tiền Giang",
+    "diện tích km2": 5938.7,
+    "dân số": 3397200
+  },
+  {
+    "tên tỉnh": "Tỉnh Cà Mau",
+    "phương án sáp nhập": "Hợp nhất tỉnh Bạc Liêu và tỉnh Cà Mau",
+    "trung tâm hành chính": "Tỉnh Cà Mau hiện nay",
+    "diện tích km2": 7942.4,
+    "dân số": 2140600
+  },
+  {
+    "tên tỉnh": "Tỉnh An Giang",
+    "phương án sáp nhập": "Hợp nhất tỉnh An Giang và tỉnh Kiên Giang",
+    "trung tâm hành chính": "Tỉnh Kiên Giang",
+    "diện tích km2": 9888.9,
+    "dân số": 3679200
+  },
+  {
+    "tên tỉnh": "Thành phố Hà Nội",
+    "phương án sáp nhập": "Không sáp nhập",
+    "trung tâm hành chính": "Giữ nguyên",
+    "diện tích km2": null,
+    "dân số": null
+  },
+  {
+    "tên tỉnh": "Thành phố Huế",
+    "phương án sáp nhập": "Không sáp nhập",
+    "trung tâm hành chính": "Giữ nguyên",
+    "diện tích km2": null,
+    "dân số": null
+  },
+  {
+    "tên tỉnh": "Tỉnh Lai Châu",
+    "phương án sáp nhập": "Không sáp nhập",
+    "trung tâm hành chính": "Giữ nguyên",
+    "diện tích km2": null,
+    "dân số": null
+  },
+  {
+    "tên tỉnh": "Tỉnh Điện Biên",
+    "phương án sáp nhập": "Không sáp nhập",
+    "trung tâm hành chính": "Giữ nguyên",
+    "diện tích km2": null,
+    "dân số": null
+  },
+  {
+    "tên tỉnh": "Tỉnh Sơn La",
+    "phương án sáp nhập": "Không sáp nhập",
+    "trung tâm hành chính": "Giữ nguyên",
+    "diện tích km2": null,
+    "dân số": null
+  },
+  {
+    "tên tỉnh": "Tỉnh Lạng Sơn",
+    "phương án sáp nhập": "Không sáp nhập",
+    "trung tâm hành chính": "Giữ nguyên",
+    "diện tích km2": null,
+    "dân số": null
+  },
+  {
+    "tên tỉnh": "Tỉnh Quảng Ninh",
+    "phương án sáp nhập": "Không sáp nhập",
+    "trung tâm hành chính": "Giữ nguyên",
+    "diện tích km2": null,
+    "dân số": null
+  },
+  {
+    "tên tỉnh": "Tỉnh Thanh Hoá",
+    "phương án sáp nhập": "Không sáp nhập",
+    "trung tâm hành chính": "Giữ nguyên",
+    "diện tích km2": null,
+    "dân số": null
+  },
+  {
+    "tên tỉnh": "Tỉnh Nghệ An",
+    "phương án sáp nhập": "Không sáp nhập",
+    "trung tâm hành chính": "Giữ nguyên",
+    "diện tích km2": null,
+    "dân số": null
+  },
+  {
+    "tên tỉnh": "Tỉnh Hà Tĩnh",
+    "phương án sáp nhập": "Không sáp nhập",
+    "trung tâm hành chính": "Giữ nguyên",
+    "diện tích km2": null,
+    "dân số": null
+  },
+  {
+    "tên tỉnh": "Tỉnh Cao Bằng",
+    "phương án sáp nhập": "Không sáp nhập",
+    "trung tâm hành chính": "Giữ nguyên",
+    "diện tích km2": null,
+    "dân số": null
+  }
+]

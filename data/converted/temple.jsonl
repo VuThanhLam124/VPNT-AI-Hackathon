@@ -1,0 +1,390 @@
+{
+        "tên chùa": "Chùa Ba La Mật",
+        "thời gian thành lập": "1886",
+        "địa điểm": "Xã Phú Thượng, huyện Phú Vang, Thừa Thiên Huế",
+        "thông tin": "Chùa Ba La Mật khởi dựng năm 1886, do bà Công Tôn Nữ Thị Tư (hiệu Thanh Trất Từ Thiện phu nhân) tạo nơi tu hành cho chồng ông Bố chánh Nguyễn Khoa Luận. Chùa được trùng tu năm 1934, vẫn giữ được nét kiến trúc độc đáo. Khuôn viên chùa rộng khoảng 2.500m2 được bao quanh bởi tường la thành. Nơi đây mang lại cảm giác yên bình và thoáng mát cho du khách."
+    },
+    {
+        "tên chùa": "Chùa Linh Quang",
+        "thời gian thành lập": "1994",
+        "địa điểm": "Thôn Tam Thắng, xã Nghĩa Châu, huyện Nghĩa Hưng, Nam Định",
+        "thông tin": "Chùa được xây dựng từ thời xa xưa nhưng bị hạ giải hoàn toàn. Năm 1994, dưới sự chỉ đạo của Đại đức Thích Minh Thành, chùa được tái thiết lại tại địa điểm cũ. Lễ hội Đền, Chùa Linh Quang được tổ chức hàng năm từ mùng 6 đến mùng 8 tháng Giêng âm lịch. Được công nhận Di sản văn hóa phi vật thể quốc gia năm 2020."
+    },
+    {
+        "tên chùa": "Chùa Mễ Sở",
+        "thời gian thành lập": "thời Hậu Lê",
+        "địa điểm": "Thôn Mễ Sở, xã Mễ Sở, huyện Văn Giang, Hưng Yên",
+        "thông tin": "Chùa thuộc hệ phái Bắc Tông, được dựng vào thời Hậu Lê và là di tích lịch sử - văn hóa cấp quốc gia. Chùa lưu giữ pho tượng Bồ Tát Quan Âm Thiên Thủ Thiên Nhãn được công nhận là bảo vật quốc gia. Đây là pho tượng Phật quý hiếm và là điểm chiêm bái của hàng ngàn du khách hằng năm."
+    },
+    {
+        "tên chùa": "Chùa Phổ Quang",
+        "thời gian thành lập": "1951",
+        "địa điểm": "Số 64/3 Huỳnh Lan Khanh, phường 2, quận Tân Bình, TPHCM",
+        "thông tin": "Được khai sơn vào năm 1951 bởi Hòa thượng Thích Viết Tạo. Năm 1954, Hòa thượng Thích Trí Dũng trụ trì và quản lý chùa. Thuộc hệ phái Bắc tông, là một trong những ngôi chùa tâm linh thanh tịnh giữa lòng Sài Gòn hiện đại, giữ được yên tĩnh và thanh bình."
+    },
+    {
+        "tên chùa": "Chùa Vân Hồ",
+        "thời gian thành lập": "thời nhà Trần",
+        "địa điểm": "Số 312 phố Bà Triệu, phường Lê Đại Hành, quận Hai Bà Trưng, Hà Nội",
+        "thông tin": "Chùa Vân Hồ có tên chữ là 'Tào Sách tự' hay 'Linh Thông tự', được xây dựng thời nhà Trần trên nền đất là 'Thư viện'. Đây là nơi tu niệm Linh lan. Ngôi chùa được trùng tu lại và là công trình trọng điểm chuẩn bị cho Thăng Long 1000 năm lịch sử."
+    },
+    {
+        "tên chùa": "Linh Sơn Bửu Thiền Tự",
+        "thời gian thành lập": None,
+        "địa điểm": "Đỉnh núi Thị Vải, xã Phú Mỹ, huyện Tân Thành, Bà Rịa - Vũng Tàu",
+        "thông tin": "Chùa còn được gọi là Chùa Núi Thị Vải hay Chùa Tổ. Có niên đại hơn 200 năm, nơi tu hành của Ni sư Diệu Thiện (Lê Thị Nữ) người được vua Gia Long sắc phong làm Linh Sơn Thánh Mẫu. Năm 1990 được xây dựng lại theo kết hợp văn hóa Việt Nam - Nhật Bản."
+    },
+    {
+        "tên chùa": "Chùa Cồn",
+        "thời gian thành lập": None,
+        "địa điểm": "Thị trấn Cồn, huyện Hải Hậu, Nam Định",
+        "thông tin": "Chùa Cồn tên chữ là 'Quy Hồn tự'. Ngoài việc thờ Phật, chùa cũng là nơi thờ các anh hùng có công khai hoang, lấn biển, mở đất. Chùa là di tích quốc gia, luôn là điểm hành hương quan trọng ở Nam Định. Lễ hội truyền thống được tổ chức hàng năm."
+    },
+    {
+        "tên chùa": "Chùa Vân An",
+        "thời gian thành lập": None,
+        "địa điểm": "Làng Chùa, xã Hồng Trị, huyện Bảo Lạc, Lào Cai",
+        "thông tin": "Chùa Vân An tọa lạc tại làng Chùa, gồm hai toà nhà to cao và đẹp. Cổng chùa mở ra phía bờ sông Gâm, tạo cảnh quan thơ mộng. Là điểm du lịch tâm linh quan trọng của Lào Cai."
+    },
+    {
+        "tên chùa": "Chùa Phật Bảo (Buddharatanaràma)",
+        "thời gian thành lập": None,
+        "địa điểm": "Số 673/3 đường Lạc Long Quân, phường 10, quận Tân Bình, TPHCM",
+        "thông tin": "Chùa Phật Bảo là một trong 22 ngôi chùa hệ phái Phật giáo Nguyên thủy trong Thành phố Hồ Chí Minh. Là ngôi chùa truyền thống với kiến trúc chuẩn Phật giáo Nguyên thủy."
+    },
+    {
+        "tên chùa": "Chùa Giác Hải",
+        "thời gian thành lập": None,
+        "địa điểm": "Quận Tân Bình, TPHCM",
+        "thông tin": "Một trong những ngôi chùa linh thiêng nổi tiếng ở quận Tân Bình. Là nơi tu hành tâm linh của nhiều phật tử."
+    },
+    {
+        "tên chùa": "Chùa Vạn Đức",
+        "thời gian thành lập": None,
+        "địa điểm": "Quận Tân Bình, TPHCM",
+        "thông tin": "Là ngôi chùa linh thiêng nổi tiếng nhất ở quận Tân Bình. Nơi tu hành và bảo tồn Phật pháp của nhiều phật tử."
+    },
+    {
+        "tên chùa": "Chùa Linh Sơn",
+        "thời gian thành lập": None,
+        "địa điểm": "Quận Tân Bình, TPHCM",
+        "thông tin": "Một trong những ngôi chùa linh thiêng và tâm linh quan trọng ở Sài Gòn. Là nơi cung cấp các lớp học Phật pháp cho phật tử."
+    },
+    {
+        "tên chùa": "Chùa Huê Nghiêm",
+        "thời gian thành lập": None,
+        "địa điểm": "Quận Tân Bình, TPHCM",
+        "thông tin": "Chùa Huê Nghiêm là ngôi chùa linh thiêng ở quận Tân Bình, nơi tu hành và luyện tập Phật pháp."
+    },
+    {
+        "tên chùa": "Chùa Núi",
+        "thời gian thành lập": None,
+        "địa điểm": "Phan Thiết, Bình Thuận",
+        "thông tin": "Chùa nằm trên một ngọn núi cao, với cảnh quan thoáng mát nhìn ra biển. Là điểm du lịch tâm linh quan trọng của Phan Thiết."
+    },
+    {
+        "tên chùa": "Chùa Linh Sơn Tây Ninh",
+        "thời gian thành lập": None,
+        "địa điểm": "Tây Ninh",
+        "thông tin": "Chùa Linh Sơn là nơi tu hành tâm linh dưới sự chỉ đạo của Ni sư Thích Nữ Diệu Nghĩa với hơn 40 năm trụ trì. Gồm ba toà chùa: chùa Trung, chùa Phật và chùa Hang."
+    },
+    {
+        "tên chùa": "Chùa Châu Lâm",
+        "thời gian thành lập": None,
+        "địa điểm": "Số 54/14 Lê Ngô Cát, Thủy Xuân, Huế",
+        "thông tin": "Chùa Châu Lâm là một ngôi chùa ở Huế, nằm trong vùng Thủy Xuân xinh đẹp, là điểm tâm linh quan trọng của cố đô."
+    },
+    {
+        "tên chùa": "Chùa Vạn Phước Di Đà",
+        "thời gian thành lập": "1845",
+        "địa điểm": "Đỉnh núi Bình An, đường Điện Biên Phủ, phường Trường An, Huế",
+        "thông tin": "Chùa nguyên là am Phổ Phúc do Thiền sư Hải Nhận hiệu Lương Tri dựng để tĩnh tu vào năm 1845. Năm 1847 thảo am trở thành chùa Phổ Phúc. Chùa nằm trên đỉnh núi, hướng về Tây Nam, với không gian yên tĩnh và thanh bình."
+    },
+    {
+        "tên chùa": "Chùa Phục Quốc",
+        "thời gian thành lập": None,
+        "địa điểm": "Phú Quốc, Kiên Giang",
+        "thông tin": "Một trong những ngôi chùa linh thiêng ở Phú Quốc, nơi tu hành tâm linh của nhiều phật tử tại đảo ngọc."
+    },
+    {
+        "tên chùa": "Chùa Trúc Sơn",
+        "thời gian thành lập": None,
+        "địa điểm": "Cần Thơ",
+        "thông tin": "Chùa nằm ở vùng sông nước Cần Thơ, là nơi tu hành tâm linh và bảo tồn Phật pháp ở vùng Đồng bằng sông Cửu Long."
+    },
+    {
+        "tên chùa": "Chùa Viên Giác",
+        "thời gian thành lập": None,
+        "địa điểm": "Hà Nội",
+        "thông tin": "Một trong những ngôi chùa lâu đời ở Hà Nội, là nơi tu hành tâm linh và giảng dạy Phật pháp cho Tăng Ni và Phật tử."
+    },
+    {
+        "tên chùa": "Chùa Phổ Minh",
+        "thời gian thành lập": "1262",
+        "địa điểm": "Thôn Tức Mạc, phường Nam Định, tỉnh Ninh Bình",
+        "thông tin": "Có tên chữ là Phổ Minh tự. Theo biên niên sử, chùa được xây dựng vào năm 1262. Chùa vẫn còn giữ được nhiều dấu tích nghệ thuật đời Trần. Được xếp hạng di tích quốc gia đặc biệt năm 2012. Có bộ cửa gian chạm rồng coi là một tác phẩm điêu khắc hoàn mỹ."
+    },
+    {
+        "tên chùa": "Chùa Tích Sơn",
+        "thời gian thành lập": None,
+        "địa điểm": "Phường Tích Sơn, thành phố Vĩnh Yên, tỉnh Vĩnh Phúc",
+        "thông tin": "Chùa là một trong những điểm tham quan du lịch ở Vĩnh Phúc được rất nhiều người yêu thích. Có quy mô đồ sộ với nhiều kiến trúc nối liền nhau như Tam Quan, gác chuông, nhà tổ, chánh điện. Nơi tâm linh thiêng liêng và uy nghi."
+    },
+    {
+        "tên chùa": "Chùa Vĩnh Nghiêm",
+        "thời gian thành lập": "1964",
+        "địa điểm": "Số 339 Nam Kỳ Khởi Nghĩa, phường 7, quận 3, Thành phố Hồ Chí Minh",
+        "thông tin": "Được xây dựng theo nguyên mẫu của chùa Vĩnh Nghiêm ở Bắc Giang vào năm 1964 và bắt đầu hoạt động từ năm 1971. Là một trong những ngôi chùa đặc biệt ở Sài Gòn, một không gian thanh tịnh giữa những cao ốc hiện đại. Được thiết kế bởi kiến trúc sư Nguyễn Bá Lăng."
+    },
+    {
+        "tên chùa": "Chùa Pháp Hoa Quận 1",
+        "thời gian thành lập": "1928",
+        "địa điểm": "Phường Đức Nhuận, Thành phố Hồ Chí Minh",
+        "thông tin": "Được Hòa thượng Đạo Hạ Thanh người Quảng Nam thành lập năm 1928. Là một ngôi chùa được xây dựng theo phong cách Phật giáo Bắc Tông. Có các công trình xây dựng lần lượt được mở rộng qua các thập kỷ."
+    },
+    {
+        "tên chùa": "Chùa Pháp Hoa Lê Văn Sỹ",
+        "thời gian thành lập": "1967",
+        "địa điểm": "Số 220A đường Lê Văn Sĩ, phường 14, Thành phố Hồ Chí Minh",
+        "thông tin": "Được Hòa thượng Thích Tuệ Hải xây dựng năm 1967. Tọa lạc bên cạnh kênh Nhiêu Lộc, là một ngôi tự viện thuộc Phật giáo Bắc tông. Là 1 trong 500 danh lam của Việt Nam."
+    },
+    {
+        "tên chùa": "Chùa Xá Lợi",
+        "thời gian thành lập": "1956",
+        "địa điểm": "Góc đường Bà Huyện Thanh Quan và Sư Thiện Chiếu, quận 3, Thành phố Hồ Chí Minh",
+        "thông tin": "Ngôi chùa đầu tiên của Thành phố xây dựng theo lối kiến trúc mới, trên là bái đường, phía dưới là giảng đường. Được xây dựng vào năm 1956, hoàn thành năm 1958. Có tháp chuông cao 32 mét gồm 7 tầng được khánh thành năm 1961."
+    },
+    {
+        "tên chùa": "Chùa Linh Ứng Bãi Bụt",
+        "thời gian thành lập": "2004",
+        "địa điểm": "Khu vực Bãi Bụt, phường Sơn Trà, Đà Nẵng",
+        "thông tin": "Ngôi chùa lớn nhất trong 'tam Linh Ứng' tại Đà Nẵng, nằm tựa lưng vào đỉnh núi Sơn Trà. Được xây dựng từ năm 2004 với kiến trúc vô cùng tinh xảo. Có tượng Phật Quan Âm cao lớn nhìn ra biển cả."
+    },
+    {
+        "tên chùa": "Chùa Linh Ứng Ngũ Hành Sơn",
+        "thời gian thành lập": None,
+        "địa điểm": "Hòn Thủy Sơn, phường Ngũ Hành Sơn, Đà Nẵng",
+        "thông tin": "Chùa Linh Ứng lâu đời nhất trong ba ngôi chùa cùng tên tại Đà Nẵng, còn được gọi là chùa Ngoài. Nằm trên ngọn Thủy Sơn - ngọn núi đẹp nhất trong danh thắng Ngũ Hành Sơn. Có tháp xá lợi 7 tầng cao 28m với gần 200 bức tượng Phật bên trong."
+    },
+    {
+        "tên chùa": "Chùa Hoằng Pháp",
+        "thời gian thành lập": "1957",
+        "địa điểm": "Xã Hóc Môn, Thành phố Hồ Chí Minh",
+        "thông tin": "Do cố Hòa thượng Ngộ Chân Tử sáng lập năm 1957 trên một cánh rừng. Năm 1959 bắt đầu xây dựng bằng gạch đinh. Chùa thuộc hệ phái Bắc tông và tọa lạc trên khu đất rộng 6 ha."
+    },
+    {
+        "tên chùa": "Chùa Hang Đồ Sơn",
+        "thời gian thành lập": "thế kỷ II TrCN",
+        "địa điểm": "Khu 1, phường Vạn Sơn, quận Đồ Sơn, Hải Phòng",
+        "thông tin": "Còn được gọi là Cốc Tự, được xem là ngôi chùa thiên tạo lớn nhất trong khu di tích lịch sử Đồ Sơn. Được coi là nơi đầu tiên đạo Phật du nhập vào Việt Nam, có niên đại từ thế kỷ II TrCN. Nguyên thủy được tạo dựng trong một hang đá núi."
+    },
+    {
+        "tên chùa": "Chùa Linh Sơn Đà Lạt",
+        "thời gian thành lập": "1938",
+        "địa điểm": "Đà Lạt, Lâm Đồng",
+        "thông tin": "Được xây dựng hoàn thành vào năm 1938, là một trong những ngôi chùa lớn và lâu đời ở tỉnh Lâm Đồng. Ẩn mình trong khu núi rừng yên bình, khung cảnh thiên nhiên thoáng mát tạo cảm giác nhẹ nhàng, an nhiên."
+    },
+    {
+        "tên chùa": "Chùa Giác Nguyên",
+        "thời gian thành lập": "1923",
+        "địa điểm": "Đồi Tản Sơn (cao khoảng 1200m), Đà Lạt",
+        "thông tin": "Chùa được xây dựng từ năm 1923. Kiến trúc cổ kính, trầm tĩnh và đầy tôn nghiêm. Khung cảnh thiên nhiên quanh chùa có cây Tùng Du Sam với tuổi thọ hơn 1600 năm, đường kính khoảng 1.6 mét."
+    },
+    {
+        "tên chùa": "Thiền Viện Trúc Lâm Phú Yên",
+        "thời gian thành lập": None,
+        "địa điểm": "Thôn Quảng Đức, xã An Thọ, huyện Tuy An, Phú Yên",
+        "thông tin": "Tọa lạc trên Cao nguyên Vân Hòa quanh năm lộng gió, sương giăng mây phủ. Trực thuộc Thiền phái Trúc Lâm Việt Nam. Được xây dựng trên diện tích hơn 34ha với nhiều hạng mục công trình. Chánh điện mang đậm nét văn hóa Việt Nam."
+    },
+    {
+        "tên chùa": "Chùa Tầu Đà Lạt",
+        "thời gian thành lập": "1938",
+        "địa điểm": "Đà Lạt, Lâm Đồng",
+        "thông tin": "Còn được gọi là chùa Thiên Vương Cổ Sát hay chùa Phật Trầm. Được xây dựng hoàn thành vào năm 1938, nơi giao thoa giữa hai nền văn hóa Việt - Hoa. Là một trong những ngôi chùa nổi tiếng ở Đà Lạt."
+    },
+    {
+        "tên chùa": "Chùa Tâm Ấn Đà Lạt",
+        "thời gian thành lập": "1974",
+        "địa điểm": "Đà Lạt, Lâm Đồng",
+        "thông tin": "Được tạo lập vào năm 1974. Nơi đây là khu Tam Bảo vừa dành cho phật tử tu học, vừa là nơi bốc thuốc, chữa bệnh cho dân nghèo. Có vị trí tuyệt đẹp, nhìn từ xa chùa như một tòa bảo tháp màu vàng."
+    },
+    {
+        "tên chùa": "Chùa Ve Chai Đà Lạt",
+        "thời gian thành lập": None,
+        "địa điểm": "Đà Lạt, Lâm Đồng",
+        "thông tin": "Một ngôi chùa nổi tiếng ở Đà Lạt với kiến trúc độc đáo. Là điểm tham quan du lịch tâm linh được nhiều người yêu thích."
+    },
+    {
+        "tên chùa": "Chùa Hộ Quốc",
+        "thời gian thành lập": None,
+        "địa điểm": "Phú Quốc, Kiên Giang",
+        "thông tin": "Chùa lớn nhất Miền Tây, tọa lạc trên đảo ngọc Phú Quốc. Nơi tu hành tâm linh linh thiêng. Là điểm du lịch tôn giáo quan trọng của đảo."
+    },
+    {
+        "tên chùa": "Chùa Dinh Cậu",
+        "thời gian thành lập": None,
+        "địa điểm": "Phú Quốc, Kiên Giang",
+        "thông tin": "Trở thành điểm du lịch tâm linh nổi tiếng ở Phú Quốc bởi sự linh thiêng và bề dày lịch sử gần 100 năm. Nơi thờ cậu Quý, một vị thần linh thiêng được thờ cúng tại đảo."
+    },
+    {
+        "tên chùa": "Chùa Sư Muôn (Hùng Long Tự)",
+        "thời gian thành lập": None,
+        "địa điểm": "Phú Quốc, Kiên Giang",
+        "thông tin": "Ngôi chùa cổ kính và linh thiêng tại đảo ngọc Phú Quốc, cách trung tâm thị trấn Dương Đông khoảng 5km về phía Tây. Nơi hành hương tâm linh của du khách và phật tử."
+    },
+    {
+        "tên chùa": "Chùa Quang Hoa",
+        "thời gian thành lập": "1866",
+        "địa điểm": "Bán đảo Thiền Quang, quận Hai Bà Trưng, Hà Nội",
+        "thông tin": "Chùa Quang Hoa nằm trong cụm di tích gồm ba ngôi chùa: Quang Hoa, Thiền Quang và Pháp Hoa. Theo tấm bia niên đại Tự Đức (1866), chùa khởi đầu chỉ là một ngôi am nhỏ. Lớn dần qua các lần tu bổ."
+    },
+    {
+        "tên chùa": "Chùa Pháp Hoa Hà Nội",
+        "thời gian thành lập": "1860",
+        "địa điểm": "Phố Trần Bình Trọng, phường Nguyễn Du, quận Hai Bà Trưng, Hà Nội",
+        "thông tin": "Chùa được ghi lại từ năm 1860 theo tấm bia khắc năm thứ 12 niên hiệu Tự Đức. Chùa hiện còn giữ được nhiều di vật, tượng cổ mang phong cách nghệ thuật thế kỷ 19 có giá trị. Năm 1989 được xếp hạng di tích thắng cảnh."
+    },
+    {
+        "tên chùa": "Chùa Dâu",
+        "thời gian thành lập": "187-226",
+        "địa điểm": "Phường Trí Quả, tỉnh Bắc Ninh",
+        "thông tin": "Đây là ngôi chùa cổ nhất Việt Nam, được xây dựng dưới thời Công Nguyên sớm nhất. Là trung tâm Phật giáo cổ xưa nhất của Việt Nam. Chùa được xây dựng vào năm 187 và hoàn thành năm 226. Được xếp hạng di tích quốc gia đặc biệt. Nơi thờ chính là Pháp Vân (Phật Mẫu)."
+    },
+    {
+        "tên chùa": "Chùa Trấn Quốc",
+        "thời gian thành lập": "541-548",
+        "địa điểm": "Đường Thanh Niên, phường Trúc Bạch, quận Ba Đình, Hà Nội",
+        "thông tin": "Chùa nằm trên một hòn đảo ở Hồ Tây, được coi là lâu đời nhất ở Thăng Long - Hà Nội với lịch sử gần 1500 năm. Được xây dựng dưới thời vua Lý Nam Đế. Được công nhận là Di tích Lịch sử Văn hoá cấp quốc gia năm 1989. Nổi tiếng được báo Daily Mail xếp vào 16 ngôi chùa đẹp nhất thế giới."
+    },
+    {
+        "tên chùa": "Chùa Tây Phương",
+        "thời gian thành lập": "thế kỷ 16-17",
+        "địa điểm": "Xã Thạch Xá, huyện Thạch Thất, Hà Nội",
+        "thông tin": "Tên chữ là Sùng Phúc tự, nằm trên đỉnh đồi Câu Lâu. Được xây dựng vào những năm 30 thế kỷ 17. Năm 1632 dưới đời vua Lê Thần Tông, chùa xây dựng thượng điện. Năm 1794 dưới thời nhà Tây Sơn, chùa được đại tu hoàn toàn. Kiến trúc gồm ba nếp nhà song song với tường xây bằng gạch Bát Tràng."
+    },
+    {
+        "tên chùa": "Chùa Một Cột",
+        "thời gian thành lập": "1049",
+        "địa điểm": "Phường Đội Cấn, quận Ba Đình, Hà Nội",
+        "thông tin": "Có tên ban đầu là Liên Hoa Đài (Đài Hoa Sen), được xây dựng dưới thời vua Lý Thái Tông năm 1049. Hoàn thiện vào năm 1105 thời vua Lý Nhân Tông. Có kiến trúc độc đáo với một điện thờ đặt trên một cột trụ duy nhất. Được dựng lại năm 1955 sau khi bị phá hủy bởi Pháp. Ngôi chùa có kiến trúc độc nhất ở Châu Á."
+    },
+    {
+        "tên chùa": "Chùa Thiên Mụ",
+        "thời gian thành lập": "1601",
+        "địa điểm": "Đồi Hà Khê, tả ngạn sông Hương, Huế",
+        "thông tin": "Còn gọi là chùa Linh Mụ. Được khởi lập năm Tân Sửu (1601) dưới thời chúa Nguyễn Hoàng. Nổi tiếng với Tháp Phước Duyên cao 21m với 7 tầng. Là biểu tượng của Huế và xuất hiện trong bài hát quốc bộ. Nơi thờ Quan Âm Bồ Tát. Được công nhận là Di tích Quốc gia Đặc biệt."
+    },
+    {
+        "tên chùa": "Chùa Bái Đính",
+        "thời gian thành lập": "1136",
+        "địa điểm": "Xã Gia Sinh, huyện Gia Viễn, tỉnh Ninh Bình",
+        "thông tin": "Quần thể chùa lớn nhất Việt Nam với nhiều kỷ lục châu Á. Chùa cổ được sáng lập bởi Quốc sư Nguyễn Minh Không năm 1136. Chùa mới được xây dựng từ 2003. Có tượng Phật bằng đồng dát vàng lớn nhất châu Á (100 tấn), chuông đồng nặng 36 tấn, giếng ngọc lớn nhất Việt Nam. Lễ hội chùa Bái Đính diễn ra từ mùng 1 đến hết tháng 3 âm lịch."
+    },
+    {
+        "tên chùa": "Chùa Hương",
+        "thời gian thành lập": "thế kỷ 15",
+        "địa điểm": "Xã Hương Sơn, Hà Nội",
+        "thông tin": "Quần thể văn hóa - tôn giáo lớn, gồm hàng chục ngôi chùa. Được xây dựng với quy mô chính vào cuối thế kỷ 17. Bị hủy hoại trong chiến tranh Đông Dương năm 1947, được phục dựng lại từ năm 1989. Nơi có động Hương Tích (chùa Trong) nằm trong lòng hang đá tự nhiên. Lễ hội chùa Hương diễn ra từ mùng 6 tháng giêng đến hạ tuần tháng 3 âm lịch, thu hút hàng triệu phật tử."
+    },
+    {
+        "tên chùa": "Chùa Keo Thái Bình",
+        "thời gian thành lập": "1061",
+        "địa điểm": "Xã Vũ Tiên, tỉnh Hưng Yên",
+        "thông tin": "Có tên chữ là Thần Quang tự, được xây dựng bởi Thiền sư Dương Không Lộ từ năm 1061. Ban đầu có tên Nghiêm Quang Tự, đến năm 1167 đổi thành Thần Quang Tự. Chùa Keo Thượng được xây dựng từ 1630-1632. Là một trong những chùa cổ còn nguyên vẹn với kiến trúc thời Lê. Có gác chuông độc đáo với bộ mái kết cấu gần 100 đàn đầu voi. Được công nhận Di tích quốc gia đặc biệt năm 2012."
+    },
+    {
+        "tên chùa": "Chùa Bối Khê",
+        "thời gian thành lập": "khoảng 1338",
+        "địa điểm": "Xã Tam Hưng, Thanh Oai, Hà Nội",
+        "thông tin": "Có tên chữ là Đại Bi tự. Một trong số ít các chùa còn lưu lại những dấu vết kiến trúc gỗ nguyên bản thời Trần. Được xây dựng vào khoảng năm 1338 thời Trần. Được xếp hạng di tích lịch sử văn hóa cấp quốc gia năm 1979. Nổi tiếng với tượng Quan Âm nghìn mắt nghìn tay thời Mạc. Lễ hội chùa diễn ra ngày 12 tháng Giêng hàng năm."
+    },
+    {
+        "tên chùa": "Chùa Cổ Lễ",
+        "thời gian thành lập": "thời Lý Thần Tông",
+        "địa điểm": "Xã Cổ Lễ, tỉnh Ninh Bình",
+        "thông tin": "Quần thể kiến trúc hòa nhập giữa phong cách Việt Nam và kiến trúc gô-tích châu Âu. Nguyên được xây dựng từ thời Lý Thần Tông do quốc sư Nguyễn Minh Không sáng lập. Năm 1902 được thiết kế và xây dựng lại theo kiến trúc 'Nhất Thốc Lâu đài'. Trong chùa có quả chuông Đại Hồng Chung lớn nhất Việt Nam được đúc năm 1936. Được xếp hạng Di tích quốc gia đặc biệt."
+    },
+    {
+        "tên chùa": "Chùa Phật Tích",
+        "thời gian thành lập": "1057",
+        "địa điểm": "Xã Phật Tích, tỉnh Bắc Ninh",
+        "thông tin": "Còn gọi là chùa Vạn Phúc, nằm trên sườn phía Nam núi Phật Tích. Được khởi dựng vào năm 1057 dưới thời vua Lý Thánh Tông. Nổi tiếng với tượng Phật A-di-đà bằng đá lớn nhất Việt Nam được dát vàng. Tượng được phát hiện năm 1066 khi tháp đổ, sự xuất hiện này làm xóm Hỏa Kê đổi tên thành Phật Tích. Được xếp hạng Di tích quốc gia đặc biệt năm 1962."
+    },
+    {
+        "tên chùa": "Chùa Thầy",
+        "thời gian thành lập": "thế kỷ 11",
+        "địa điểm": "Sài Sơn, huyện Quốc Oai, Hà Nội",
+        "thông tin": "Được xây dựng dưới thời vua Lý Nhân Tông, thế kỷ 11. Nơi tu hành của Thiền sư Từ Đạo Hạnh (1072-1116), danh tăng nổi tiếng. Nổi tiếng với các biểu diễn mua rối nước truyền thống Việt Nam. Chùa gồm ba tòa song song: chùa Hạ, chùa Trung và chùa Thượng. Nằm ở chân núi Sài Sơn cách Hà Nội 30km. Là trung tâm hành hương đặc biệt dịp Tết."
+    },
+    {
+        "tên chùa": "Chùa Tam Chúc",
+        "thời gian thành lập": "thế kỷ 15",
+        "địa điểm": "Huyện Lý Nhân, tỉnh Hà Nam",
+        "thông tin": "Được coi là ngôi chùa lớn nhất Việt Nam hiện nay. Thu hút rất nhiều Phật tử và du khách. Được ví như 'Hạ Long trên cạn' bởi vẻ đẹp nên thơ. Có 3 điện chính: Điện Tam Thế, Điện Pháp Chủ, Điện Quan Âm. Được thiết kế và xây dựng vô cùng trang nghiêm. Nơi tổ chức các sự kiện Phật giáo quốc tế lớn."
+    },
+    {
+        "tên chùa": "Chùa Thánh Duyên",
+        "thời gian thành lập": "thế kỷ 14",
+        "địa điểm": "Huế",
+        "thông tin": "Một trong những ngôi chùa cổ nhất miền Trung Việt Nam. Nổi tiếng với kiến trúc cổ kính và lịch sử lâu đời. Là điểm du lịch tâm linh quan trọng ở Huế. Thờ chính các vị Phật và Bồ Tát."
+    },
+    {
+        "tên chùa": "Chùa Hoằng Phúc",
+        "thời gian thành lập": "1301",
+        "địa điểm": "Quảng Bình",
+        "thông tin": "Một trong những đại danh lam cổ nhất ở Quảng Bình. Theo lời truyền lại, năm 1301, Phật Hoàng đã thuyết pháp, truyền giảng đạo lí tại ngôi chùa này. Có chiều dài lịch sử trên 715 năm. Nổi tiếng với tính linh thiêng cao."
+    },
+    {
+        "tên chùa": "Chùa Sùng Nghiêm Diên Thánh",
+        "thời gian thành lập": "trước thời Lý",
+        "địa điểm": "Thôn Duy Tinh, xã Văn Lộc, huyện Hậu Lộc, Thanh Hóa",
+        "thông tin": "Một ngôi chùa cổ có từ trước thời Lý. Được xếp hạng di tích quốc gia. Nơi thờ đại tướng Trần Hưng Đạo. Nơi đây là biểu tượng của tinh hoa văn hóa lâu đời của xứ Thanh."
+    },
+    {
+        "tên chùa": "Chùa Thác Sùng Nghiêm",
+        "thời gian thành lập": null,
+        "địa điểm": "Thanh Hóa",
+        "thông tin": "Một ngôi chùa nổi tiếng ở Thanh Hóa với cảnh quan thiên nhiên đẹp, nổi tiếng với các lễ hội Phật giáo."
+    },
+    {
+        "tên chùa": "Chùa Giác Viên",
+        "thời gian thành lập": null,
+        "địa điểm": "Thành phố Hồ Chí Minh",
+        "thông tin": "Một trong những ngôi chùa cổ ở Thành phố Hồ Chí Minh, nổi tiếng với kiến trúc cổ kính."
+    },
+    {
+        "tên chùa": "Chùa Giác Lâm",
+        "thời gian thành lập": null,
+        "địa điểm": "Thành phố Hồ Chí Minh",
+        "thông tin": "Một trong những ngôi chùa lâu đời nhất ở Thành phố Hồ Chí Minh, là tâm linh của cộng đồng người Việt ở miền Nam."
+    },
+    {
+        "tên chùa": "Chùa Linh Phong",
+        "thời gian thành lập": null,
+        "địa điểm": "Bình Định",
+        "thông tin": "Một ngôi chùa nổi tiếng ở Bình Định với lịch sử lâu đời."
+    },
+    {
+        "tên chùa": "Chùa Linh Ứng Sơn Trà",
+        "thời gian thành lập": null,
+        "địa điểm": "Đà Nẵng",
+        "thông tin": "Nằm trên sườn Sơn Trà, Đà Nẵng. Nơi thờ Quan Âm Bồ Tát. Nổi tiếng với tượng Phật Quan Âm cao lớn nhìn ra biển. Là điểm du lịch tâm linh quan trọng của miền Trung."
+    },
+    {
+        "tên chùa": "Thiền Viện Trúc Lâm Đà Lạt",
+        "thời gian thành lập": null,
+        "địa điểm": "Đà Lạt, Lâm Đồng",
+        "thông tin": "Thiền viện nổi tiếng ở Đà Lạt, nơi tu hành của tăng ni. Nổi tiếng với kiến trúc chuẩn Phật giáo và cảnh quan đẹp mê hoặc ở cao nguyên."
+    },
+    {
+        "tên chùa": "Chùa Bửu Long",
+        "thời gian thành lập": null,
+        "địa điểm": "Thành phố Hồ Chí Minh",
+        "thông tin": "Một ngôi chùa nổi tiếng ở Thành phố Hồ Chí Minh, nổi tiếng với bộ tượng La Hán."
+    },
+    {
+        "tên chùa": "Chùa Xiêm Cán",
+        "thời gian thành lập": null,
+        "địa điểm": null,
+        "thông tin": "Một ngôi chùa nổi tiếng được nhắc đến trong danh sách các chùa đẹp nhất Việt Nam."
+    }

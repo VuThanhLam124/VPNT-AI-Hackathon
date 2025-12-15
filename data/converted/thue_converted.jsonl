@@ -1,0 +1,13 @@
+{"question": "Xuất quỹ tiền mặt để mua NVL sử dụng ngay trong sản xuất (thuộc diện chịu thuế theo phương pháp khấu trừ), Kế toán ghi:", "answer": "Nợ TK 621, Nợ TK 133(1) / Có TK 111"}
+{"question": "Kế toán tập hợp chi phí SCL TSCĐ theo phương thức thuê ngoài sửa chữa, Kế toán ghi:", "answer": "Nợ TK 241, Nợ TK 133(2) / Có TK 111, 112, 331…"}
+{"question": "Trường hợp Kế toán HTK theo phương pháp KKĐK, tính thuế GTGT theo phương pháp khấu trừ, khi mua hàng Hóa, Kế toán ghi:", "answer": "Nợ TK 611(2), Nợ TK 133(1) / Có TK 111, 112, 331…"}
+{"question": "Nhập kho nguyên liệu, vật liệu mua ngoài, thuộc diện chịu thuế GTGT theo phương pháp khấu trừ, chưa thanh toán tiền, Kế toán ghi:", "answer": "Nợ TK 152, Nợ TK 133 / Có TK 331"}
+{"question": "Đơn vị mua vật tư đã thanh toán tiền nhưng cuối tháng hàng chưa về nhập kho (thuộc diện chịu thuế GTGT theo phương pháp khấu trừ), Kế toán ghi:", "answer": "Nợ TK 151, Nợ TK 133 / Có TK 111"}
+{"question": "Chi phí liên quan đến quá trình mua nguyên vật liệu đã thanh toán bằng tiền mặt, Kế toán ghi:", "answer": "Nợ TK 152, Nợ TK 133 / Có TK 111"}
+{"question": "Doanh nghiệp trả lương cho người lao động bằng sản phẩm của doanh nghiệp, Kế toán ghi:", "answer": "Nợ TK 334 / Có TK 512, Có TK 333(1)"}
+{"question": "Khi nộp thuế GTGT vào NSNN bằng TGNH, Kế toán ghi:", "answer": "Nợ TK 333(1) / Có TK 112"}
+{"question": "Xác định số thuế TNCN phải nộp tính trên thu nhập tính thuế, Kế toán ghi:", "answer": "Nợ TK 334 / Có TK 333(5)"}
+{"question": "Khi nộp thuế tài nguyên, Kế toán ghi:", "answer": "Nợ TK 333(6) / Có TK 111, 112"}
+{"question": "DN nhận thông báo nộp thuế khai thác tài nguyên hàng tháng. DN nộp bằng TGNH, Kế toán ghi:", "answer": "Nợ TK 333(6) / Có TK 112"}
+{"question": "Khi nộp thuế trước bạ bằng UNC, Kế toán ghi:", "answer": "Nợ TK 333(9) / Có TK 112"}
+{"question": "Giá tính thuế tài nguyên là:", "answer": "Giá bán đến vị tại nơi khai thác tài nguyên, chưa có thuế GTGT"}

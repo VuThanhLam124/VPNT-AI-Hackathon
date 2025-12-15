@@ -1,0 +1,709 @@
+
+  {
+    "Z": 1,
+    "symbol": "H",
+    "name": "Hydrogen",
+    "atomic_weight": 1.008
+  },
+  {
+    "Z": 2,
+    "symbol": "He",
+    "name": "Helium",
+    "atomic_weight": 4.002602
+  },
+  {
+    "Z": 3,
+    "symbol": "Li",
+    "name": "Lithium",
+    "atomic_weight": 6.94
+  },
+  {
+    "Z": 4,
+    "symbol": "Be",
+    "name": "Beryllium",
+    "atomic_weight": 9.0121831
+  },
+  {
+    "Z": 5,
+    "symbol": "B",
+    "name": "Boron",
+    "atomic_weight": 10.81
+  },
+  {
+    "Z": 6,
+    "symbol": "C",
+    "name": "Carbon",
+    "atomic_weight": 12.011
+  },
+  {
+    "Z": 7,
+    "symbol": "N",
+    "name": "Nitrogen",
+    "atomic_weight": 14.007
+  },
+  {
+    "Z": 8,
+    "symbol": "O",
+    "name": "Oxygen",
+    "atomic_weight": 15.999
+  },
+  {
+    "Z": 9,
+    "symbol": "F",
+    "name": "Fluorine",
+    "atomic_weight": 18.998403163
+  },
+  {
+    "Z": 10,
+    "symbol": "Ne",
+    "name": "Neon",
+    "atomic_weight": 20.1797
+  },
+  {
+    "Z": 11,
+    "symbol": "Na",
+    "name": "Sodium",
+    "atomic_weight": 22.98976928
+  },
+  {
+    "Z": 12,
+    "symbol": "Mg",
+    "name": "Magnesium",
+    "atomic_weight": 24.305
+  },
+  {
+    "Z": 13,
+    "symbol": "Al",
+    "name": "Aluminum",
+    "atomic_weight": 26.9815385
+  },
+  {
+    "Z": 14,
+    "symbol": "Si",
+    "name": "Silicon",
+    "atomic_weight": 28.085
+  },
+  {
+    "Z": 15,
+    "symbol": "P",
+    "name": "Phosphorus",
+    "atomic_weight": 30.973761998
+  },
+  {
+    "Z": 16,
+    "symbol": "S",
+    "name": "Sulfur",
+    "atomic_weight": 32.06
+  },
+  {
+    "Z": 17,
+    "symbol": "Cl",
+    "name": "Chlorine",
+    "atomic_weight": 35.45
+  },
+  {
+    "Z": 18,
+    "symbol": "Ar",
+    "name": "Argon",
+    "atomic_weight": 39.948
+  },
+  {
+    "Z": 19,
+    "symbol": "K",
+    "name": "Potassium",
+    "atomic_weight": 39.0983
+  },
+  {
+    "Z": 20,
+    "symbol": "Ca",
+    "name": "Calcium",
+    "atomic_weight": 40.078
+  },
+  {
+    "Z": 21,
+    "symbol": "Sc",
+    "name": "Scandium",
+    "atomic_weight": 44.955908
+  },
+  {
+    "Z": 22,
+    "symbol": "Ti",
+    "name": "Titanium",
+    "atomic_weight": 47.867
+  },
+  {
+    "Z": 23,
+    "symbol": "V",
+    "name": "Vanadium",
+    "atomic_weight": 50.9415
+  },
+  {
+    "Z": 24,
+    "symbol": "Cr",
+    "name": "Chromium",
+    "atomic_weight": 51.9961
+  },
+  {
+    "Z": 25,
+    "symbol": "Mn",
+    "name": "Manganese",
+    "atomic_weight": 54.938044
+  },
+  {
+    "Z": 26,
+    "symbol": "Fe",
+    "name": "Iron",
+    "atomic_weight": 55.845
+  },
+  {
+    "Z": 27,
+    "symbol": "Co",
+    "name": "Cobalt",
+    "atomic_weight": 58.933194
+  },
+  {
+    "Z": 28,
+    "symbol": "Ni",
+    "name": "Nickel",
+    "atomic_weight": 58.6934
+  },
+  {
+    "Z": 29,
+    "symbol": "Cu",
+    "name": "Copper",
+    "atomic_weight": 63.546
+  },
+  {
+    "Z": 30,
+    "symbol": "Zn",
+    "name": "Zinc",
+    "atomic_weight": 65.38
+  },
+  {
+    "Z": 31,
+    "symbol": "Ga",
+    "name": "Gallium",
+    "atomic_weight": 69.723
+  },
+  {
+    "Z": 32,
+    "symbol": "Ge",
+    "name": "Germanium",
+    "atomic_weight": 72.63
+  },
+  {
+    "Z": 33,
+    "symbol": "As",
+    "name": "Arsenic",
+    "atomic_weight": 74.921595
+  },
+  {
+    "Z": 34,
+    "symbol": "Se",
+    "name": "Selenium",
+    "atomic_weight": 78.971
+  },
+  {
+    "Z": 35,
+    "symbol": "Br",
+    "name": "Bromine",
+    "atomic_weight": 79.904
+  },
+  {
+    "Z": 36,
+    "symbol": "Kr",
+    "name": "Krypton",
+    "atomic_weight": 83.798
+  },
+  {
+    "Z": 37,
+    "symbol": "Rb",
+    "name": "Rubidium",
+    "atomic_weight": 85.4678
+  },
+  {
+    "Z": 38,
+    "symbol": "Sr",
+    "name": "Strontium",
+    "atomic_weight": 87.62
+  },
+  {
+    "Z": 39,
+    "symbol": "Y",
+    "name": "Yttrium",
+    "atomic_weight": 88.90584
+  },
+  {
+    "Z": 40,
+    "symbol": "Zr",
+    "name": "Zirconium",
+    "atomic_weight": 91.224
+  },
+  {
+    "Z": 41,
+    "symbol": "Nb",
+    "name": "Niobium",
+    "atomic_weight": 92.90637
+  },
+  {
+    "Z": 42,
+    "symbol": "Mo",
+    "name": "Molybdenum",
+    "atomic_weight": 95.95
+  },
+  {
+    "Z": 43,
+    "symbol": "Tc",
+    "name": "Technetium",
+    "atomic_weight": 97.90721
+  },
+  {
+    "Z": 44,
+    "symbol": "Ru",
+    "name": "Ruthenium",
+    "atomic_weight": 101.07
+  },
+  {
+    "Z": 45,
+    "symbol": "Rh",
+    "name": "Rhodium",
+    "atomic_weight": 102.9055
+  },
+  {
+    "Z": 46,
+    "symbol": "Pd",
+    "name": "Palladium",
+    "atomic_weight": 106.42
+  },
+  {
+    "Z": 47,
+    "symbol": "Ag",
+    "name": "Silver",
+    "atomic_weight": 107.8682
+  },
+  {
+    "Z": 48,
+    "symbol": "Cd",
+    "name": "Cadmium",
+    "atomic_weight": 112.414
+  },
+  {
+    "Z": 49,
+    "symbol": "In",
+    "name": "Indium",
+    "atomic_weight": 114.818
+  },
+  {
+    "Z": 50,
+    "symbol": "Sn",
+    "name": "Tin",
+    "atomic_weight": 118.71
+  },
+  {
+    "Z": 51,
+    "symbol": "Sb",
+    "name": "Antimony",
+    "atomic_weight": 121.76
+  },
+  {
+    "Z": 52,
+    "symbol": "Te",
+    "name": "Tellurium",
+    "atomic_weight": 127.6
+  },
+  {
+    "Z": 53,
+    "symbol": "I",
+    "name": "Iodine",
+    "atomic_weight": 126.90447
+  },
+  {
+    "Z": 54,
+    "symbol": "Xe",
+    "name": "Xenon",
+    "atomic_weight": 131.293
+  },
+  {
+    "Z": 55,
+    "symbol": "Cs",
+    "name": "Cesium",
+    "atomic_weight": 132.90545196
+  },
+  {
+    "Z": 56,
+    "symbol": "Ba",
+    "name": "Barium",
+    "atomic_weight": 137.327
+  },
+  {
+    "Z": 57,
+    "symbol": "La",
+    "name": "Lanthanum",
+    "atomic_weight": 138.90547
+  },
+  {
+    "Z": 58,
+    "symbol": "Ce",
+    "name": "Cerium",
+    "atomic_weight": 140.116
+  },
+  {
+    "Z": 59,
+    "symbol": "Pr",
+    "name": "Praseodymium",
+    "atomic_weight": 140.90766
+  },
+  {
+    "Z": 60,
+    "symbol": "Nd",
+    "name": "Neodymium",
+    "atomic_weight": 144.242
+  },
+  {
+    "Z": 61,
+    "symbol": "Pm",
+    "name": "Promethium",
+    "atomic_weight": 144.91276
+  },
+  {
+    "Z": 62,
+    "symbol": "Sm",
+    "name": "Samarium",
+    "atomic_weight": 150.36
+  },
+  {
+    "Z": 63,
+    "symbol": "Eu",
+    "name": "Europium",
+    "atomic_weight": 151.964
+  },
+  {
+    "Z": 64,
+    "symbol": "Gd",
+    "name": "Gadolinium",
+    "atomic_weight": 157.25
+  },
+  {
+    "Z": 65,
+    "symbol": "Tb",
+    "name": "Terbium",
+    "atomic_weight": 158.92535
+  },
+  {
+    "Z": 66,
+    "symbol": "Dy",
+    "name": "Dysprosium",
+    "atomic_weight": 162.5
+  },
+  {
+    "Z": 67,
+    "symbol": "Ho",
+    "name": "Holmium",
+    "atomic_weight": 164.93033
+  },
+  {
+    "Z": 68,
+    "symbol": "Er",
+    "name": "Erbium",
+    "atomic_weight": 167.259
+  },
+  {
+    "Z": 69,
+    "symbol": "Tm",
+    "name": "Thulium",
+    "atomic_weight": 168.93422
+  },
+  {
+    "Z": 70,
+    "symbol": "Yb",
+    "name": "Ytterbium",
+    "atomic_weight": 173.045
+  },
+  {
+    "Z": 71,
+    "symbol": "Lu",
+    "name": "Lutetium",
+    "atomic_weight": 174.9668
+  },
+  {
+    "Z": 72,
+    "symbol": "Hf",
+    "name": "Hafnium",
+    "atomic_weight": 178.49
+  },
+  {
+    "Z": 73,
+    "symbol": "Ta",
+    "name": "Tantalum",
+    "atomic_weight": 180.94788
+  },
+  {
+    "Z": 74,
+    "symbol": "W",
+    "name": "Tungsten",
+    "atomic_weight": 183.84
+  },
+  {
+    "Z": 75,
+    "symbol": "Re",
+    "name": "Rhenium",
+    "atomic_weight": 186.207
+  },
+  {
+    "Z": 76,
+    "symbol": "Os",
+    "name": "Osmium",
+    "atomic_weight": 190.23
+  },
+  {
+    "Z": 77,
+    "symbol": "Ir",
+    "name": "Iridium",
+    "atomic_weight": 192.217
+  },
+  {
+    "Z": 78,
+    "symbol": "Pt",
+    "name": "Platinum",
+    "atomic_weight": 195.084
+  },
+  {
+    "Z": 79,
+    "symbol": "Au",
+    "name": "Gold",
+    "atomic_weight": 196.966569
+  },
+  {
+    "Z": 80,
+    "symbol": "Hg",
+    "name": "Mercury",
+    "atomic_weight": 200.592
+  },
+  {
+    "Z": 81,
+    "symbol": "Tl",
+    "name": "Thallium",
+    "atomic_weight": 204.38
+  },
+  {
+    "Z": 82,
+    "symbol": "Pb",
+    "name": "Lead",
+    "atomic_weight": 207.2
+  },
+  {
+    "Z": 83,
+    "symbol": "Bi",
+    "name": "Bismuth",
+    "atomic_weight": 208.9804
+  },
+  {
+    "Z": 84,
+    "symbol": "Po",
+    "name": "Polonium",
+    "atomic_weight": 209.0
+  },
+  {
+    "Z": 85,
+    "symbol": "At",
+    "name": "Astatine",
+    "atomic_weight": 210.0
+  },
+  {
+    "Z": 86,
+    "symbol": "Rn",
+    "name": "Radon",
+    "atomic_weight": 222.0
+  },
+  {
+    "Z": 87,
+    "symbol": "Fr",
+    "name": "Francium",
+    "atomic_weight": 223.0
+  },
+  {
+    "Z": 88,
+    "symbol": "Ra",
+    "name": "Radium",
+    "atomic_weight": 226.0
+  },
+  {
+    "Z": 89,
+    "symbol": "Ac",
+    "name": "Actinium",
+    "atomic_weight": 227.0
+  },
+  {
+    "Z": 90,
+    "symbol": "Th",
+    "name": "Thorium",
+    "atomic_weight": 232.0377
+  },
+  {
+    "Z": 91,
+    "symbol": "Pa",
+    "name": "Protactinium",
+    "atomic_weight": 231.03588
+  },
+  {
+    "Z": 92,
+    "symbol": "U",
+    "name": "Uranium",
+    "atomic_weight": 238.02891
+  },
+  {
+    "Z": 93,
+    "symbol": "Np",
+    "name": "Neptunium",
+    "atomic_weight": 237.0
+  },
+  {
+    "Z": 94,
+    "symbol": "Pu",
+    "name": "Plutonium",
+    "atomic_weight": 244.0
+  },
+  {
+    "Z": 95,
+    "symbol": "Am",
+    "name": "Americium",
+    "atomic_weight": 243.0
+  },
+  {
+    "Z": 96,
+    "symbol": "Cm",
+    "name": "Curium",
+    "atomic_weight": 247.0
+  },
+  {
+    "Z": 97,
+    "symbol": "Bk",
+    "name": "Berkelium",
+    "atomic_weight": 247.0
+  },
+  {
+    "Z": 98,
+    "symbol": "Cf",
+    "name": "Californium",
+    "atomic_weight": 251.0
+  },
+  {
+    "Z": 99,
+    "symbol": "Es",
+    "name": "Einsteinium",
+    "atomic_weight": 252.0
+  },
+  {
+    "Z": 100,
+    "symbol": "Fm",
+    "name": "Fermium",
+    "atomic_weight": 257.0
+  },
+  {
+    "Z": 101,
+    "symbol": "Md",
+    "name": "Mendelevium",
+    "atomic_weight": 258.0
+  },
+  {
+    "Z": 102,
+    "symbol": "No",
+    "name": "Nobelium",
+    "atomic_weight": 259.0
+  },
+  {
+    "Z": 103,
+    "symbol": "Lr",
+    "name": "Lawrencium",
+    "atomic_weight": 262.0
+  },
+  {
+    "Z": 104,
+    "symbol": "Rf",
+    "name": "Rutherfordium",
+    "atomic_weight": 267.0
+  },
+  {
+    "Z": 105,
+    "symbol": "Db",
+    "name": "Dubnium",
+    "atomic_weight": 268.0
+  },
+  {
+    "Z": 106,
+    "symbol": "Sg",
+    "name": "Seaborgium",
+    "atomic_weight": 271.0
+  },
+  {
+    "Z": 107,
+    "symbol": "Bh",
+    "name": "Bohrium",
+    "atomic_weight": 274.0
+  },
+  {
+    "Z": 108,
+    "symbol": "Hs",
+    "name": "Hassium",
+    "atomic_weight": 269.0
+  },
+  {
+    "Z": 109,
+    "symbol": "Mt",
+    "name": "Meitnerium",
+    "atomic_weight": 276.0
+  },
+  {
+    "Z": 110,
+    "symbol": "Ds",
+    "name": "Darmstadtium",
+    "atomic_weight": 281.0
+  },
+  {
+    "Z": 111,
+    "symbol": "Rg",
+    "name": "Roentgenium",
+    "atomic_weight": 281.0
+  },
+  {
+    "Z": 112,
+    "symbol": "Cn",
+    "name": "Copernicium",
+    "atomic_weight": 285.0
+  },
+  {
+    "Z": 113,
+    "symbol": "Nh",
+    "name": "Nihonium",
+    "atomic_weight": 286.0
+  },
+  {
+    "Z": 114,
+    "symbol": "Fl",
+    "name": "Flerovium",
+    "atomic_weight": 289.0
+  },
+  {
+    "Z": 115,
+    "symbol": "Mc",
+    "name": "Moscovium",
+    "atomic_weight": 288.0
+  },
+  {
+    "Z": 116,
+    "symbol": "Lv",
+    "name": "Livermorium",
+    "atomic_weight": 293.0
+  },
+  {
+    "Z": 117,
+    "symbol": "Ts",
+    "name": "Tennessine",
+    "atomic_weight": 294.0
+  },
+  {
+    "Z": 118,
+    "symbol": "Og",
+    "name": "Oganesson",
+    "atomic_weight": 294.0
+  }
