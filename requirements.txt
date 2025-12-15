@@ -1,0 +1,11 @@
+# Core dependencies
+requests>=2.31.0
+numpy>=1.24.0
+tqdm>=4.65.0
+torch>=2.9.1
+rank-bm25>=0.2.2
+
+# Optional (nếu muốn improve performance)
+scikit-learn>=1.3.0  # Cho TfidfVectorizer nếu dùng
+sentence-transformers>=5.2.0  # Cho embedding search nâng cao
+faiss-cpu>=1.7.4  # Cho vector search nhanh

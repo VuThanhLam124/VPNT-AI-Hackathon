@@ -1,0 +1,262 @@
+===============================================
+TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM
+CÔNG TY CÔNG NGHỆ THÔNG TIN VNPT
+
+LLM API COMPATIBLE
+TÀI LIỆU MÔ TẢ TÍCH HỢP LLM API
+===============================================
+
+1. GIỚI THIỆU
+-------------
+
+1.1. Mục đích
+Tài liệu mô tả tích hợp API LLM/Embedding Track 2.
+
+1.2. Phạm vi
+Tài liệu bao quát các vấn đề liên quan đến mô tả tích hợp được thiết kế dựa trên tài 
+liệu SRS.
+
+1.3. Đối tượng sử dụng
+Các thí sinh dự thi, tham gia vào cuộc thi VNPT AI - Age of AInicorns - Track 2 - 
+The Builder.
+
+
+2. QUY TRÌNH
+------------
+Các đội thi đăng nhập tại portal của VNPT AI - Age of AInicorns, sau đó có thể 
+Download được API key tại tab Instruction.
+
+
+3. GIAO TIẾP API
+----------------
+
+3.1. [API 1] Sinh câu trả lời từ LLM Small
+------------------------------------------
+Endpoint: /data-service/v1/chat/completions/vnptai-hackathon-small
+Chức năng: Thực hiện hoàn thành hội thoại trò chuyện giữa người dùng và LLM.
+Quota: Giới hạn 1000 req/ngày, 60 req/h.
+Method: POST
+
+REQUEST HEADERS:
+┌──────────────────┬─────────────────────────┬──────────┬───────────────────────────────┐
+│ Tên trường       │ Giá trị                 │ Bắt buộc │ Mô tả                         │
+├──────────────────┼─────────────────────────┼──────────┼───────────────────────────────┤
+│ Content-Type     │ application/json        │ x        │                               │
+│ Authorization    │ Bearer ${access_token}  │ x        │ Author dịch vụ được cung cấp  │
+│ Token-id         │ String                  │ x        │ Key dịch vụ được cấp          │
+│ Token-key        │ String                  │ x        │ Key dịch vụ được cấp          │
+└──────────────────┴─────────────────────────┴──────────┴───────────────────────────────┘
+
+REQUEST BODY PARAMETERS:
+┌─────────────────────────┬──────────────┬───────────────────────────────────────────────┐
+│ Tên trường              │ Kiểu dữ liệu │ Mô tả                                         │
+├─────────────────────────┼──────────────┼───────────────────────────────────────────────┤
+│ model                   │ String       │ Tên mô hình: vnptai_hackathon_small           │
+│ messages                │ List[Dict]   │ Mảng tin nhắn (role: system/user/assistant   │
+│                         │              │ và content)                                    │
+│ temperature             │ float        │ Độ ngẫu nhiên (Mặc định: 1.0)                 │
+│ top_p                   │ float        │ Ngưỡng xác suất tích lũy                      │
+│ top_k                   │ int          │ Số từ có xác suất cao nhất                    │
+│ n                       │ int          │ Số lượng câu trả lời được tạo                 │
+│ stop                    │ String/List  │ Token dừng việc tạo văn bản                   │
+│ max_completion_tokens   │ int          │ Giới hạn số token tối đa đầu ra              │
+│ presence_penalty        │ float        │ Phạt token đã xuất hiện (-2.0 đến 2.0)        │
+│ frequency_penalty       │ float        │ Phạt token theo tần suất (-2.0 đến 2.0)       │
+│ response_format         │ object       │ Định dạng đầu ra (VD: {"type": "json_object"})│
+│ seed                    │ int          │ Seed cho reproducible outputs                 │
+│ tools                   │ list         │ Danh sách functions mô hình có thể gọi        │
+│ tool_choice             │ string/object│ Kiểm soát việc gọi tool (auto/none/specific)  │
+│ logprobs                │ boolean      │ Trả về log probabilities                      │
+│ top_logprobs            │ int          │ Số token có xác suất cao nhất (0-20)          │
+└─────────────────────────┴──────────────┴───────────────────────────────────────────────┘
+
+VÍ DỤ CURL:
+```bash
+curl --location 'https://api.idg.vnpt.vn/data-service/v1/chat/completions/vnptai-hackathon-small' \
+--header 'Authorization: Bearer $AUTHORIZATION' \
+--header 'Token-id: $TOKEN_ID' \
+--header 'Token-key: $TOKEN_KEY' \
+--header 'Content-Type: application/json' \
+--data '{
+    "model": "vnptai_hackathon_small",
+    "messages": [
+        {
+            "role": "user",
+            "content": "Chào bạn!"
+        }
+    ],
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 20,
+    "n": 2,
+    "max_completion_tokens": 512
+}'
+```
+
+VÍ DỤ PYTHON:
+```python
+import requests
+
+headers = {
+    'Authorization': 'Bearer #Authorization',
+    'Token-id': '#TokenID',
+    'Token-key': '#TokenKey',
+    'Content-Type': 'application/json',
+}
+
+json_data = {
+    'model': 'vnptai_hackathon_small',
+    'messages': [
+        {
+            'role': 'user',
+            'content': 'Hi, VNPT AI.',
+        },
+    ],
+    'temperature': 1.0,
+    'top_p': 1.0,
+    'top_k': 20,
+    'n': 1,
+    'max_completion_tokens': 10,
+}
+
+response = requests.post(
+    'https://api.idg.vnpt.vn/data-service/v1/chat/completions/vnptai-hackathon-small',
+    headers=headers,
+    json=json_data
+)
+print(response.json())
+```
+
+
+3.2. [API 2] Sinh câu trả lời từ LLM Large
+------------------------------------------
+Endpoint: /data-service/v1/chat/completions/vnptai-hackathon-large
+Chức năng: Thực hiện hoàn thành hội thoại trò chuyện giữa người dùng và LLM.
+Quota: Giới hạn 500 req/ngày, 40 req/h.
+Method: POST
+
+REQUEST HEADERS:
+┌──────────────────┬─────────────────────────┬──────────┬───────────────────────────────┐
+│ Tên trường       │ Giá trị                 │ Bắt buộc │ Mô tả                         │
+├──────────────────┼─────────────────────────┼──────────┼───────────────────────────────┤
+│ Content-Type     │ application/json        │ x        │                               │
+│ Authorization    │ Bearer ${access_token}  │ x        │ Author dịch vụ được cung cấp  │
+│ Token-id         │ String                  │ x        │ Key dịch vụ được cấp          │
+│ Token-key        │ String                  │ x        │ Key dịch vụ được cấp          │
+└──────────────────┴─────────────────────────┴──────────┴───────────────────────────────┘
+
+REQUEST BODY PARAMETERS:
+(Tương tự API 1, chỉ khác model name: vnptai_hackathon_large)
+
+VÍ DỤ PYTHON:
+```python
+import requests
+
+headers = {
+    'Authorization': 'Bearer #Authorization',
+    'Token-id': '#TokenID',
+    'Token-key': '#TokenKey',
+    'Content-Type': 'application/json',
+}
+
+json_data = {
+    'model': 'vnptai_hackathon_large',
+    'messages': [
+        {
+            'role': 'user',
+            'content': 'Hi, VNPT AI.',
+        },
+    ],
+    'temperature': 1.0,
+    'top_p': 1.0,
+    'top_k': 20,
+    'n': 1,
+    'max_completion_tokens': 10,
+}
+
+response = requests.post(
+    'https://api.idg.vnpt.vn/data-service/v1/chat/completions/vnptai-hackathon-large',
+    headers=headers,
+    json=json_data
+)
+print(response.json())
+```
+
+
+3.3. [API 3] Tính toán biểu diễn của đoạn văn bản (Embedding)
+-------------------------------------------------------------
+Endpoint: /data-service/vnptai-hackathon-embedding
+Chức năng: Tính toán biểu diễn vector của đoạn văn bản.
+Quota: 500 req/m.
+Method: POST
+
+REQUEST HEADERS:
+┌──────────────────┬─────────────────────────┬──────────┬───────────────────────────────┐
+│ Tên trường       │ Giá trị                 │ Bắt buộc │ Mô tả                         │
+├──────────────────┼─────────────────────────┼──────────┼───────────────────────────────┤
+│ Content-Type     │ application/json        │ x        │                               │
+│ Authorization    │ Bearer ${access_token}  │ x        │ Author dịch vụ được cung cấp  │
+│ Token-id         │ String                  │ x        │ Key dịch vụ được cấp          │
+│ Token-key        │ String                  │ x        │ Key dịch vụ được cấp          │
+└──────────────────┴─────────────────────────┴──────────┴───────────────────────────────┘
+
+REQUEST BODY PARAMETERS:
+┌─────────────────────┬──────────────┬──────────────────────────────────────────────┐
+│ Tên trường          │ Kiểu dữ liệu │ Mô tả                                        │
+├─────────────────────┼──────────────┼──────────────────────────────────────────────┤
+│ model               │ String       │ Tên mô hình: vnptai_hackathon_embedding      │
+│ input               │ String       │ Văn bản đầu vào cần được vector hoá          │
+│ encoding_format     │ String       │ Định dạng encoding (float/base64)            │
+└─────────────────────┴──────────────┴──────────────────────────────────────────────┘
+
+VÍ DỤ CURL:
+```bash
+curl --location 'https://api.idg.vnpt.vn/data-service/vnptai-hackathon-embedding' \
+--header 'Authorization: Bearer $AUTHORIZATION' \
+--header 'Token-id: $TOKEN_ID' \
+--header 'Token-key: $TOKEN_KEY' \
+--header 'Content-Type: application/json' \
+--data '{
+    "model": "vnptai_hackathon_embedding",
+    "input": "Xin chào VNPT AI",
+    "encoding_format": "base64"
+}'
+```
+
+VÍ DỤ PYTHON:
+```python
+import requests
+
+headers = {
+    'Authorization': 'Bearer #Authorization',
+    'Token-id': '#TokenID',
+    'Token-key': '#TokenKey',
+    'Content-Type': 'application/json',
+}
+
+json_data = {
+    'model': 'vnptai_hackathon_embedding',
+    'input': 'Xin chào, mình là VNPT AI.',
+    'encoding_format': 'float',
+}
+
+response = requests.post(
+    'https://api.idg.vnpt.vn/data-service/vnptai-hackathon-embedding',
+    headers=headers,
+    json=json_data
+)
+print(response.json())
+```
+
+
+4. NHỮNG VẤN ĐỀ KHÁC
+--------------------
+<Những yêu cầu đặc thù khác sẽ được bổ sung trong quá trình phát triển hệ thống sau này>
+
+
+5. TÀI LIỆU THAM KHẢO
+---------------------
+5.1. Tài liệu của dự án: (Sẽ được bổ sung)
+5.2. Các tài liệu khác: (Sẽ được bổ sung)
+
+===============================================

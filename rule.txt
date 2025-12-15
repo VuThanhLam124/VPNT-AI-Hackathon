@@ -1,0 +1,56 @@
+Cá nhân/đội thi tập trung vào việc làm cho một mô hình LLM hoạt động tốt hơn. Nhiệm vụ là tinh chỉnh, tối ưu hoặc tái cấu trúc pipeline sử dụng mô hình để đạt được hiệu suất vượt trội khi trả lời một bộ câu hỏi trắc nghiệm được thiết kế sát với thực tiễn sử dụng của người Việt. Đây không chỉ là bài kiểm tra khả năng xử lý ngôn ngữ tự nhiên, mà còn là thước đo cho mức độ hiểu biết văn hoá, tư duy logic và độ tin cậy khi triển khai trong môi trường Việt Nam.
+
+Các đội sẽ được cung cấp API từ mô hình của VNPT AI:
+
+1000 api requests/ngày/vnptai_hackathon_small
+
+500 api requests/ngày/vnptai_hackathon_large
+
+500 api requests/phút/vnptai_hackathon_embedding
+Bộ dữ liệu được thiết kế xoay quanh các kiến thức chính xác, chính thống liên quan đến văn hoá, lịch sử, địa lý, chính trị Việt Nam, với các nhóm:
+
+Câu hỏi bắt buộc không được trả lời
+
+Câu hỏi bắt buộc phải trả lời đúng
+
+Câu hỏi đọc hiểu văn bản dài
+
+Câu hỏi toán học và tư duy logic
+
+Câu hỏi đa lĩnh vực
+
+
+Các đội được phép thu thập dữ liệu trên internet để xây vector database, yêu cầu các đội thu thập dữ liệu từ các nguồn mở, license cho phép sử dụng. BTC sẽ không chịu trách nhiệm nếu các đội thi sử dụng các dữ liệu bảo mật hoặc không được cấp phép/license.
+Pipeline không được sử dụng các external API như ChatGPT, Gemini,... hay API cung cấp các thông tin search, tra cứu dưới bất kỳ hình thức nào trong thời gian inference.
+
+Docker Container: Docker hub
+
+Entry-point: Đọc public_test.csv hoặc private_test.csv tại /data, ghi pred.csv vào /output với hai cột: qid,answer (A/B/C/D).
+
+Github chứa code và các chạy reproduce kết quả trong container.
+
+Tài liệu thuyết minh phương pháp: Định dạng tuỳ chọn với mục tiêu thể hiện được rõ nhất tính sáng tạo, hiệu quả của chiến lược tối ưu mô hình đã lựa chọn.
+Tuân thủ pháp luật và quy chuẩn văn hóa
+
+Mọi nội dung, sản phẩm và phát biểu trong khuôn khổ cuộc thi phải tuân thủ quy định pháp luật Việt Nam và không vi phạm thuần phong mỹ tục.
+Nghiêm cấm sử dụng dữ liệu vi phạm quyền riêng tư, dữ liệu cá nhân chưa được phép, hoặc chứa nội dung liên quan đến chính trị, tôn giáo, phân biệt giới tính, chủng tộc.
+Trong trường hợp sử dụng dữ liệu người dùng thực tế, phải có biện pháp ẩn danh, bảo mật thông tin đầy đủ theo Nghị định số 13/2023/NĐ-CP của Chính phủ về Bảo vệ dữ liệu cá nhân và các quy định liên quan.
+
+Sở hữu trí tuệ
+
+Không được sao chép, sử dụng trái phép mã nguồn, tài nguyên, thư viện, mô hình hoặc ý tưởng từ bên thứ ba mà chưa có sự cho phép bằng văn bản.
+Nếu có sử dụng phần mềm mã nguồn mở (open-source), thí sinh phải ghi rõ giấy phép sử dụng (license) và tuân thủ đúng điều khoản đi kèm.
+
+Quyền sở hữu và khai thác
+
+Đội thi giữ toàn quyền sở hữu trí tuệ đối với sản phẩm, mã nguồn và ý tưởng do chính mình phát triển trong cuộc thi.
+Ban Tổ chức và VNPT AI (Công ty Công nghệ thông tin VNPT) không sở hữu mã nguồn, tuy nhiên có quyền:
+Giới thiệu, trưng bày, truyền thông về sản phẩm/dự án của đội trong khuôn khổ cuộc thi và hoạt động truyền thông kèm theo.
+Ưu tiên ký kết hợp đồng hợp tác/triển khai với các đội có sản phẩm, mô hình hoặc giải pháp nổi bật, có tiềm năng ứng dụng thực tế.
+Trong trường hợp hợp tác triển khai sau cuộc thi, hai bên sẽ ký thỏa thuận riêng về bản quyền, quyền sử dụng và quyền thương mại (nếu có).
+
+Ứng xử và đạo đức thi đấu
+
+Tôn trọng Ban tổ chức, Ban giám khảo, đội thi khác và môi trường chung.
+Không sử dụng công cụ gian lận (gian lận kết quả test, gian lận mô hình, can thiệp hệ thống chấm điểm...). Nếu vi phạm, đội thi sẽ bị hủy tư cách tham gia và thu hồi giải thưởng (nếu có).
+Mọi tranh chấp, khiếu nại sẽ do Ban tổ chức xem xét và quyết định cuối cùng.
