@@ -386,6 +386,7 @@ def save_bge_index(kb_emb: dict, path: str = BGE_INDEX_PATH):
 
 def load_saved_bge_index(path: str = BGE_INDEX_PATH, model_name: str = BGE_MODEL_NAME) -> Optional[dict]:
     if not os.path.exists(path):
+        print(f"[WARN] Không tìm thấy BGE index: {path}")
         return None
     if np is None:
         print("[WARN] Không load được index vì thiếu numpy")
@@ -414,8 +415,12 @@ def build_bm25_index(kb_dir: str = "data/converted", max_chunk_chars: int = MAX_
     BM25 fallback (rank_bm25).
     """
     if not USE_BM25_FALLBACK or BM25Okapi is None:
+        if BM25Okapi is None:
+            print("[WARN] Thiếu `rank-bm25` -> không build được BM25 index (pip install rank-bm25).")
         return None
     docs_raw = load_kb_corpus(kb_dir)
+    if not docs_raw:
+        print(f"[WARN] KB rỗng hoặc không đọc được từ kb_dir={kb_dir} (cần *.jsonl).")
     docs = []
     tokenized_corpus = []
     for d in docs_raw:

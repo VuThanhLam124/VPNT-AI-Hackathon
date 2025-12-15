@@ -166,14 +166,17 @@ class LocalLLM:
             token=self.hf_token,
             trust_remote_code=True,
         )
-        self.model = AutoModelForCausalLM.from_pretrained(
-            model_id,
-            token=self.hf_token,
-            trust_remote_code=True,
-            device_map=device_map,
-            torch_dtype=torch_dtype,
-            quantization_config=quant_cfg,
-        )
+        model_kwargs = {
+            "token": self.hf_token,
+            "trust_remote_code": True,
+            "device_map": device_map,
+            "quantization_config": quant_cfg,
+        }
+        # Transformers >= 4.57 dùng `dtype` (torch_dtype deprecated).
+        try:
+            self.model = AutoModelForCausalLM.from_pretrained(model_id, dtype=torch_dtype, **model_kwargs)
+        except TypeError:
+            self.model = AutoModelForCausalLM.from_pretrained(model_id, torch_dtype=torch_dtype, **model_kwargs)
         self.model.eval()
 
     def generate(self, prompt: str, max_new_tokens: int) -> str:
@@ -212,10 +215,13 @@ def main():
     bge_index = load_saved_bge_index(args.bge_index)
     bm25_index = None
     if bge_index is None:
-        print("[WARN] Không load được BGE index, fallback BM25.")
+        print(f"[WARN] Không load được BGE index ({args.bge_index}), fallback BM25.")
         bm25_index = build_bm25_index(args.kb_dir)
         if bm25_index is None:
-            raise SystemExit("[ERROR] Không có index retrieval khả dụng (BGE hoặc BM25).")
+            raise SystemExit(
+                "[ERROR] Không có index retrieval khả dụng (BGE hoặc BM25). "
+                "Kiểm tra lại `--bge_index` và `--kb_dir`, hoặc cài `rank-bm25`."
+            )
     else:
         print(f"[INFO] Loaded BGE index: {args.bge_index} ({len(bge_index['docs'])} docs)")
 
