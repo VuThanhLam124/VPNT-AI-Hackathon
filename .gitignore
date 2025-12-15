@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Outputs
+submission.csv
+val_pred.csv
+llm_errors.jsonl
+
+# Secrets (do not commit real keys)
+api-keys.json

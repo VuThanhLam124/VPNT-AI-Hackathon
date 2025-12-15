@@ -1,12 +1,9 @@
 #!/bin/bash
 set -e
 
-# Local LLM (Transformers). Model id mặc định set trong `predict.py`:
-#   LOCAL_LLM_MODEL_ID=Qwen/Qwen3-8B-Base
-# Có thể override:
-#   LOCAL_LLM_MODEL_ID=/code/models/Qwen3-8B-Base
-#   LOCAL_LLM_4BIT=1
-#   LOCAL_LLM_MAX_NEW_TOKENS=16
+# VNPT-only:
+# - Cần có `api-keys.json` trong /code (hoặc set API_KEYS_PATH trỏ tới file đó).
+# - Cần có `kb_vnpt_embedding_index.pkl` trong /code (hoặc set VNPT_EMBED_INDEX_PATH).
 
 python predict.py --input "/code/private_test.json" --output "submission.csv"
 

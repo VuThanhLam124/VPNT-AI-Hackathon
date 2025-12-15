@@ -1,16 +1,4 @@
-# Core dependencies
+# Core dependencies (VNPT-only)
 requests>=2.31.0
 numpy>=1.24.0
 tqdm>=4.65.0
-# Tránh pin torch cao làm lệch môi trường (đặc biệt Kaggle/Colab đã có torch+cuda sẵn).
-torch
-rank-bm25>=0.2.2
-transformers==4.57.3
-accelerate>=0.33.0
-bitsandbytes>=0.43.0
-sentencepiece>=0.2.0
-sentence-transformers>=5.2.0
-
-# Optional
-scikit-learn>=1.3.0  # Chỉ cần nếu bật thêm TF-IDF/feature khác
-faiss-cpu>=1.7.4  # Cho vector search nhanh (không bắt buộc)
