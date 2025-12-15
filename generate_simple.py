@@ -13,15 +13,19 @@ import math
 import pickle
 from typing import Optional
 
+_np_import_error = None
 try:
     import numpy as np
-except Exception:
+except Exception as e:
     np = None
+    _np_import_error = e
 
+_st_import_error = None
 try:
     from sentence_transformers import SentenceTransformer
-except Exception:
+except Exception as e:
     SentenceTransformer = None
+    _st_import_error = e
 from tqdm import tqdm
 from data_utils import (
     has_embedded_context,
@@ -202,8 +206,15 @@ def build_kb_index(kb_dir: str = "data/converted") -> list:
 class BGEEmbedder:
     def __init__(self, model_name: str = BGE_MODEL_NAME, device: str = BGE_DEVICE):
         if SentenceTransformer is None or np is None:
+            detail = []
+            if _np_import_error is not None:
+                detail.append(f"numpy_import={type(_np_import_error).__name__}: {_np_import_error}")
+            if _st_import_error is not None:
+                detail.append(f"sentence_transformers_import={type(_st_import_error).__name__}: {_st_import_error}")
+            extra = (" | " + " | ".join(detail)) if detail else ""
             raise RuntimeError(
-                "Thiếu thư viện để chạy BGE. Cần cài `sentence-transformers` và `numpy`."
+                "Không load được BGE embedder. Hãy cài `sentence-transformers` và `numpy`"
+                + extra
             )
         self.model = SentenceTransformer(model_name, device=device)
         # Tránh input quá dài làm chậm/quá giới hạn

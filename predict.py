@@ -152,12 +152,18 @@ class LocalLLM:
         if load_in_4bit and torch.cuda.is_available():
             try:
                 from transformers import BitsAndBytesConfig
+                try:
+                    import bitsandbytes  # noqa: F401
+                    has_bnb = True
+                except Exception:
+                    has_bnb = False
 
-                quant_cfg = BitsAndBytesConfig(
-                    load_in_4bit=True,
-                    bnb_4bit_quant_type="nf4",
-                    bnb_4bit_compute_dtype=torch.float16,
-                )
+                if has_bnb:
+                    quant_cfg = BitsAndBytesConfig(
+                        load_in_4bit=True,
+                        bnb_4bit_quant_type="nf4",
+                        bnb_4bit_compute_dtype=torch.float16,
+                    )
             except Exception:
                 quant_cfg = None
 
